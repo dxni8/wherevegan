@@ -1,7 +1,7 @@
 from ipaddress import ip_address
 from math import radians
 import math
-from turtle import distance, home
+#from turtle import distance, home 
 from unicodedata import decimal
 from django.shortcuts import redirect, render
 from urllib import response
