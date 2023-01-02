@@ -323,6 +323,10 @@ def einzel_standort_berechnen(request):
             return render(request, 'restaurants/error.html', {
                 'error_message_no_restaurants': 'There are currently no restaurants registered in your submitted range.'
             })
+        if city_restaurant == None:
+            return render(request, 'restaurants/error.html', {
+                'error_message_no_restaurants': 'No restaurants.'
+            })
         restaurants_nähe = []
         for lokal in city_restaurant:
             distanz1 = distanz_berechnen(lat,lon, lokal)
