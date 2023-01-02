@@ -130,8 +130,8 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 SILENCED_SYSTEM_CHECKS = ['captcha.recaptcha_test_key_error']
-RECAPTCHA_SITE_KEY = '6LfbhMQjAAAAAPFMzWYJC-3M75Fd3LOyaVpKxFk_'
-RECAPTCHA_SECRET_KEY = '6LfbhMQjAAAAAJlzm06anRZyOGrmZzhkZpAUH0Iw'
+RECAPTCHA_SITE_KEY = '6LdIVMcjAAAAAHl_rrQss8wkjCLu77E16pP9J5jC'
+RECAPTCHA_SECRET_KEY = '6LdIVMcjAAAAACxXYEtbxWAtuWAMvIJArvDe8-HB'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 django_heroku.settings(locals())
