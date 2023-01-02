@@ -133,6 +133,11 @@
     <p class="text">{{ error_message_recaptcha }}</p>
     <br><a class="link" href="{% url 'home' %}">get back</a><br>
     {% endif %}
+    
+    {% if error_message_no_restaurants %} 
+    <p class="text">{{ error_message_no_restaurants }}</p>
+    <br><a class="link" href="{% url 'home' %}">get back</a><br>
+    {% endif %}
     </div>
 </main>
 </body>

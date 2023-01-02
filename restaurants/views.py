@@ -319,7 +319,10 @@ def einzel_standort_berechnen(request):
         #restaurants_nah = restaurants_nähe(lat, lon, country_user, range_user)
 
         city_restaurant = standort_restaurant.objects.filter(country=country_user, verified=True, menu=True)
-    
+        if city_restaurant == '':
+            return render(request, 'restaurants/error.html', {
+                'error_message_no_restaurants': 'There are currently no restaurants registered in your submitted range.'
+            })
         restaurants_nähe = []
         for lokal in city_restaurant:
             distanz1 = distanz_berechnen(lat,lon, lokal)
@@ -919,4 +922,5 @@ git add .
 git commit -am "xyz"
 git push
 git push heroku main
+heroku logs -t
 """
