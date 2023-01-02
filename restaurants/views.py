@@ -50,7 +50,6 @@ def gps_berechnen(request):
         vorwahl = request.POST.get('countryCode')
         phone = request.POST.get('phone_number')
         gtc_check = request.POST.get('gtc_check')
-        safety = request.POST.get('s2')
         restaurant.verified = False
 
         address = request.POST.get('address') #um es als extra variable zu haben
@@ -919,4 +918,5 @@ installation of:
 git add .
 git commit -am "xyz"
 git push
+git push heroku main
 """
