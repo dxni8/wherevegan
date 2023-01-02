@@ -916,7 +916,7 @@ virtuel environment
 installation of:
     captcha 
 
-
-websiteschlüssel 6LfbhMQjAAAAAPFMzWYJC-3M75Fd3LOyaVpKxFk_
-geheim 6LfbhMQjAAAAAJlzm06anRZyOGrmZzhkZpAUH0Iw
+git add .
+git commit -am "xyz"
+git push
 """
