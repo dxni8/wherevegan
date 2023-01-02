@@ -51,6 +51,7 @@ def gps_berechnen(request):
         phone = request.POST.get('phone_number')
         gtc_check = request.POST.get('gtc_check')
         restaurant.verified = False
+        restaurant.menu = False
 
         address = request.POST.get('address') #um es als extra variable zu haben
         if restaurant.address == '' or restaurant.restaurant_name == '' or restaurant.email == '' or phone == '' or restaurant.first_name == '' or restaurant.last_name == '' or vorwahl == '':
