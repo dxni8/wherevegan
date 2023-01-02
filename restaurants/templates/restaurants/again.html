@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>code</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'again.css' %}">
+    <script src="{% static 'language_again.js' %}"></script>
+</head>
+<body>
+    <main class="main">
+        <div id="header-item-div"></div>
+        <a class="header-link" id="header-link1" href="{% url 'home' %}">stop</a>
+        <form action="email_again" method="post" class="form">
+            <p class="text">Please enter the same email address as before!</p><br>
+            {% csrf_token %}
+            <input class="input" type="email" placeholder="email" name="email2"><br>
+            <input class="input" type="hidden" name="r" value="{{ r }}"><br>
+            <input class="input" type="hidden" name="p" value="{{ p }}"><br>
+            <input class="input" type="hidden" name="a" value="{{ a }}"><br>
+            <input class="input" type="hidden" name="e" value="{{ e }}"><br>
+            <input class="button-submit" type="submit" value="submit"> <br>
+        </form>
+    </main>
+</body>
+</html>

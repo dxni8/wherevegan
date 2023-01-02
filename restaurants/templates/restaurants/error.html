@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'error.css' %}"> 
+</head>
+<body>
+<main class="main">
+    <div class="main-div">
+        <h2 class="heading">error</h2> <br>
+    {% if error_message_lon_lat %} 
+    <p class="text">{{ error_message_lon_lat }}</p>
+    <br><a class="link" href="{% url 'home' %}">get back</a> <br>
+    {% endif %}
+    
+    {% if error_message_fast %} 
+    <p class="text">{{ error_message_fast }}</p>
+    <p class="text">{{ error_message_activate }}</p>
+    <br><a class="link" href="{% url 'home' %}">get back</a><br>
+    {% endif %}
+
+    {% if error_message_restaurant_already_exists %} 
+    <p class="text">{{ error_message_restaurant_already_exists }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_not_enough_information %} 
+    <p class="text">{{ error_message_not_enough_information }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_range %} 
+    <p class="text">{{ error_message_range }}</p>
+    <br><a class="link" href="{% url 'home' %}">get back</a><br>
+    {% endif %}
+
+    {% if error_message_couldnt_locate_restaurant %} 
+    <p class="text">{{ error_message_couldnt_locate_restaurant }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_email_false %} 
+    <p class="text">{{ error_message_email_false }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br><br>
+    {% endif %}
+    
+    {% if error_false_page %} 
+    <p class="text">{{ error_false_page }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_name_wrong %} 
+    <p class="text">{{ error_message_name_wrong }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+
+    {% if error_message_phone_number %} 
+    <p class="text">{{ error_message_phone_number }}</p>
+    <p class="text">{{ error_message_e164 }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_fehlende_informationen %} 
+    <p class="text">{{ error_message_fehlende_informationen }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_falscher_code %} 
+    <p class="text">{{ error_message_falscher_code }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_restaurantdaten_verändert %} 
+    <p class="text">{{ error_message_restaurantdaten_verändert }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_already_verified %} 
+    <p class="text">{{ error_message_already_verified }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+
+    {% if error_message_latlon_safety %} 
+    <p class="text">{{ error_message_latlon_safety }}</p>
+    <br><a class="link" href="{% url 'home' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_fehlende_informationen_again %} 
+    <p class="text">{{ error_message_fehlende_informationen_again }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_email_invalid %} 
+    <p class="text">{{ error_message_email_invalid }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_email_not_same %} 
+    <p class="text">{{ error_message_email_not_same }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %} 
+
+    {% if error_message_email_again_error %} 
+    <p class="text">{{ error_message_email_not_same }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_email_code_not_send %} 
+    <p class="text">{{ error_message_email_code_not_send }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_country_different %} 
+    <p class="text">{{ error_message_country_different }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_gtc %} 
+    <p class="text">{{ error_message_gtc }}</p>
+    <br><a class="link" href="{% url 'restaurant_add' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_safety %} 
+    <p class="text">{{ error_message_safety }}</p>
+    <br><a class="link" href="{% url 'home' %}">get back</a><br>
+    {% endif %}
+    
+    {% if error_message_recaptcha %} 
+    <p class="text">{{ error_message_recaptcha }}</p>
+    <br><a class="link" href="{% url 'home' %}">get back</a><br>
+    {% endif %}
+    </div>
+</main>
+</body>
+</html>

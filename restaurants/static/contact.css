@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #344648;
+    font-family: 'Inspiration', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+.header-items {
+    list-style: none;
+    position: absolute;
+    right: 20px;
+    margin-top: 45px;
+}
+#header-item-div{
+    background-image: url("/static/pics/german.png");
+    background-size: cover;
+    width: 26px;
+    height: 16px;
+    position: relative;
+    margin-right: 8px;
+    top: 4px;
+}
+.header-item {
+    margin-right: 10px;
+    display: inline-block;
+    
+}
+.header-item a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 5px;
+}
+.header-item a:hover{
+    color: rgba(27, 27, 27, 0.735);
+}
+
+
+.main{
+    height: 105vh;
+    min-height: 600px;
+    width: 100%;
+    background: #657779;
+    background: linear-gradient(180deg, #657779 14%, #344648 73%);
+}
+.main-div {
+    width: 88vw;
+    margin: auto;
+    height: auto;
+}
+.contact-information{
+    height: auto;
+    position: absolute;
+    width: 80vw;
+    color: white;
+    top: 20vh;
+    text-align: justify;
+    font-size: 16px;
+}
+.heading{
+    display: inline-block;
+    margin: 0;
+    margin-top: 14vh;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+}
+.text1{
+    font-size: 20px;
+    font-weight: 200;
+}
+.text2{
+    font-size: 20px;
+    font-weight: 300;
+}
+.email{
+    color: rgb(23, 20, 35);
+    font-size: 20px;
+    font-weight: 400;
+}
+.link{
+    color: rgb(255, 255, 255);
+    position: relative;    
+    bottom: 20px;
+    font-size: 20px;
+    margin-top: 2px;
+    display: inline-block;
+    text-decoration: underline;
+    font-weight: 100;
+}
+.link:hover{
+    color: rgb(191, 189, 189);
+}
+
+@media(max-width: 450px){
+    .heading{
+        font-size: 38px;
+    }
+    .main{
+        min-height: 800px;
+    }
+    .text1{
+        font-size: 16px;
+    }
+    .email{
+        font-size: 16px;
+    }
+    .text2{
+        font-size: 16px;
+    }
+    #link_add{
+        font-size: 16px;
+    }
+}
+@media(max-width: 400px){
+    .main{
+        min-height: 900px;
+    }
+}
+@media(max-width: 200px){
+    .text1{
+        font-size: 14px;
+    }
+    .email{
+        font-size: 12px;
+    }
+    .text2{
+        font-size: 14px;
+    }
+    #link_add{
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 800px){
+    .header-items {
+        right: 2vw;
+        z-index: 1;
+        margin-top: 14px;
+        top: -2px;
+    }
+    .header-item a{
+        background-color: rgba(52,70,72,1);
+        border-radius: 0px 0px 8px 8px;
+        padding: 15px 20px;
+        background-color: #29292a;
+        color: #ffffff;
+        text-decoration: none;
+        margin-right: 5px;
+    }
+    .header-item a:hover{
+        background-color: rgba(0, 0, 0, 0.735);
+    }
+
+
+    .main{
+        display: inline-block;
+        background: #344648;
+    }
+    .main-div {
+        display: flex;
+        background: linear-gradient(90deg, #344648 30%, #ffffff 0%);
+        box-shadow: 3px 3px 6px 2px #293536, -3px -3px 6px 2px #293536;
+        height: 85vh;
+        width: 90vw;
+        margin: auto;
+        position: relative;
+        vertical-align: middle;
+        margin-top: 9vh;
+    }
+    .contact-information{
+        width: 50%;
+        right: 10vw;
+        top: 8vh;
+        color: black;
+        font-size: 20px;
+    }
+    .heading{
+        position: absolute;
+        font-size: 46px;
+        color: #ffffff;
+        margin-top: 5vh;
+        margin-left: 4vw;
+    } 
+    .text1{
+        font-size: 18px;
+    }
+    .text2{
+        font-size: 18px;
+    }
+    .link{
+        color: rgb(23, 20, 35);
+        font-size: 18px;
+    }
+    .link:hover{
+        color: #344648;
+    }
+    .email{
+        font-size: 18px;
+    }
+
+    @media(max-height: 700px){
+        .heading{
+            font-size: 46px;
+            margin-top: 5vh;
+        }
+    }
+    @media(max-height: 620px){
+        .heading{
+            font-size: 42px;
+
+        }
+    }
+}
+@media(min-width: 1050px){
+    .heading{
+        font-size: 52px;
+    }
+    .contact-information{
+        top: 10vh;
+    }
+    .text1{
+        font-size: 20px;
+    }
+    .text2{
+        font-size: 20px;
+    }
+    .link{
+        font-size: 20px;
+    }
+    .email{
+        font-size: 20px;
+    }
+}
+@media(min-width: 1400px){
+    .heading{
+        font-size: 66px;
+    }
+
+    .contact-information{
+        top: 18vh;
+    }
+}

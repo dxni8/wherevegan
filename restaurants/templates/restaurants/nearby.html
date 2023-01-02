@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en" style="margin-top: -25px; padding: 0;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vegan</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'nearby.css' %}">
+    <script src="{% static 'home.js' %}"></script>
+    <script src="{% static 'language_home.js' %}"></script> 
+    <script type="text/javascript" src="{{ STATIC_URL }} /static/jquery-3.6.2.min.js"></script> 
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<main id="information">
+    <div class="information-main">
+        <div class="image"></div>
+        <header class="header">
+            <ul class="header-items">
+                <li class="header-item"><div id="header-item-div"></div></li>
+                <li class="header-item" id="header-item-contact"><a href="{% url 'contact' %}" id="navbar-item" class="navbar-item-contact">contact</a></li>
+                <li class="header-item-last"><a href="{% url 'recipes' %}" id="navbar-item-last">recipes</a></li>
+            </ul>
+        </header>
+        <div class="information-div">
+            <h1 class="heading" id="heading_id">Find vegan<br/>restaurants in <br/>your area </h1> <br>
+            <p class="text"></p>
+        <form action="ip_location" method="post" class="form">
+            {% csrf_token %}
+                <input type="text" placeholder="1 - 150(km)" name="range" class="input_field"> <br>
+                <input type="hidden" id="hidden1" name="lat1">
+                <input type="hidden" id="hidden2" name="lon1">
+                <input type="text" id="s1" name="s1" autocomplete="off">
+                <input type="submit" value="search" id="mybutton" class="button">
+        </form>
+        </div>
+    </div> 
+{% if distanzen %}
+<div id="content">
+    <div class="div-restaurants-distances">
+        <div class="div-restaurants">
+            <ol class="list-restaurants">
+                {% for restaurant in restaurants %} 
+                    <li class="list-restaurant">
+                        <p class="restaurant_name">{{ restaurant }} </p>
+                        <p class="restaurant_address">{{ restaurant.address }}</p>
+                    </li>
+                {% endfor %}
+            </ol>
+        </div>
+        <div class="div-distances">
+            <ol class="list-distances">
+                {% if distanzen %}
+                {% for distanz in distanzen %} 
+                    <li class="list-distance">
+                        <p class="restaurant_distance">{{ distanz }} km</p>
+                    </li>
+                {% endfor %} 
+                {% endif %}
+            </ol>
+        </div>
+        {% if distanzen %}
+            <button id="mapButton">map</button>
+        {% endif %}
+        <div id="map">{{ map|safe }}</div>
+    </div>
+</div>
+<div id="fill"></div>
+{% endif %}  
+
+</main>
+
+<footer class="footer">
+
+</footer>
+</body>
+</html>
