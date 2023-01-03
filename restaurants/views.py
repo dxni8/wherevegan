@@ -45,8 +45,6 @@ def gps_berechnen(request):
         restaurant.first_name = request.POST.get('first_name')
         restaurant.last_name = request.POST.get('last_name')
         restaurant.restaurant_name = request.POST.get('restaurant_name')
-        restaurant.save()
-        return render(request, 'restaurants/added.html')
         restaurant.address = request.POST.get('address')
         restaurant.email = request.POST.get('email')
         vorwahl = request.POST.get('countryCode')
