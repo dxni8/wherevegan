@@ -914,18 +914,14 @@ def phone_number_country(number):
         return 'Oʻzbekiston'
     return 'none'
 
-#superuser:
-#   dxni
-#   DanielWlach1!040405
+
 
 """
-virtuel environment
-installation of:
-    captcha 
-
 git add .
 git commit -am "xyz"
 git push
 git push heroku main
 heroku logs -t
+
+heroku run python3 manage.py 
 """

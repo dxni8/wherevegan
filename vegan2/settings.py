@@ -24,12 +24,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-8p4uk7w=d9_k$#&re8p4$%=n7d^8s=d2igxh@wb6n)u=s+an-2"
+with open(os.path.join(BASE_DIR, 'secret_key.txt')) as f:
+    SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['wherevegan.de', 'www.wherevegan.de', 'wherevegan.herokuapp.com']
 
 
 # Application definition
@@ -136,3 +137,13 @@ RECAPTCHA_SECRET_KEY = '6LdIVMcjAAAAACxXYEtbxWAtuWAMvIJArvDe8-HB'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 django_heroku.settings(locals())
+
+#HTTPS settings
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = True
+
+#HSTS settings
+SECURE_HSTS_SECONDS = 31536000
+SECURE_HSTS_PRELOAD = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
