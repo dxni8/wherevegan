@@ -44,14 +44,16 @@ def gps_berechnen(request):
         restaurant = standort_restaurant()
         restaurant.first_name = request.POST.get('first_name')
         restaurant.last_name = request.POST.get('last_name')
-        restaurant.address = request.POST.get('address')
         restaurant.restaurant_name = request.POST.get('restaurant_name')
+        restaurant.save()
+        return render(request, 'restaurants/added.html')
+        restaurant.address = request.POST.get('address')
         restaurant.email = request.POST.get('email')
         vorwahl = request.POST.get('countryCode')
         phone = request.POST.get('phone_number')
         gtc_check = request.POST.get('gtc_check')
         restaurant.verified = False
-        #restaurant.menu = False
+        restaurant.menu = False
 
         address = request.POST.get('address') #um es als extra variable zu haben
         if restaurant.address == '' or restaurant.restaurant_name == '' or restaurant.email == '' or phone == '' or restaurant.first_name == '' or restaurant.last_name == '' or vorwahl == '':
@@ -319,7 +321,7 @@ def einzel_standort_berechnen(request):
         country_user = land_user_berechnen(lat, lon)
         #restaurants_nah = restaurants_nähe(lat, lon, country_user, range_user)
 
-        city_restaurant = standort_restaurant.objects.filter(country=country_user, verified=True) #menu=True
+        city_restaurant = standort_restaurant.objects.filter(country=country_user, verified=True, menu=True) #menu=True
         if city_restaurant == '':
             return render(request, 'restaurants/error.html', {
                 'error_message_no_restaurants': 'There are currently no restaurants registered in your submitted range.'
@@ -362,7 +364,7 @@ def einzel_standort_berechnen(request):
 
 
 def distanz_berechnen(lat, lon, name2):
-    place2 = standort_restaurant.objects.get(restaurant_name=name2, address=name2.address, verified=True) #menu=True
+    place2 = standort_restaurant.objects.get(restaurant_name=name2, address=name2.address, verified=True, menu=True)
 
     lon1 = radians(lon)
     lat1 = radians(lat)
