@@ -44,6 +44,9 @@
     </div> 
 {% if distanzen %}
 <div id="content">
+    {% if no_restaurants %}
+    {{ no_restaurants }}
+    {% endif %}
     <div class="div-restaurants-distances">
         <div class="div-restaurants">
             <ol class="list-restaurants">

@@ -334,7 +334,10 @@ def einzel_standort_berechnen(request):
             if distanz1 < range_user:
                 restaurants_nähe.append(lokal)
                 
-       
+        if restaurants_nähe == []:
+            return render(request, 'restaurants/nearby.html', {
+                'no_restaurants': 'Unfortunately the are no vegan restaurants in your requested range.'
+            })
             #create a map
         point = (lat, lon)
         m = folium.Map(width=800, height=500, location=point,
