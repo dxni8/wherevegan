@@ -182,7 +182,7 @@ body {
     .contact-information{
         width: 50%;
         right: 10vw;
-        top: 8vh;
+        top: 50px;
         color: black;
         font-size: 20px;
     }
@@ -228,7 +228,7 @@ body {
         font-size: 52px;
     }
     .contact-information{
-        top: 10vh;
+        top: 50px;
     }
     .text1{
         font-size: 20px;
@@ -246,9 +246,5 @@ body {
 @media(min-width: 1400px){
     .heading{
         font-size: 66px;
-    }
-
-    .contact-information{
-        top: 18vh;
     }
 }

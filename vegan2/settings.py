@@ -142,7 +142,7 @@ django_heroku.settings(locals())
 #HTTPS settings
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
-SECURE_SSL_REDIRECT = False
+SECURE_SSL_REDIRECT = True
 
 #HSTS settings
 SECURE_HSTS_SECONDS = 31536000
