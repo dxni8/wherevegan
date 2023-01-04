@@ -4,6 +4,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #657779;
     font-family: 'Inspiration', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -40,7 +41,7 @@ body {
     display: flex;
     align-items: center;
     background: rgb(101,119,121);
-    background: linear-gradient(180deg, rgba(101,119,121,1) 14%, rgba(52,70,72,1) 73%);
+    background: linear-gradient(180deg, #657779 14%, rgba(52,70,72,1) 73%);
 }
 .main-div{
     display: inline-block;

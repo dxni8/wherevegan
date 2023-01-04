@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: #657779;
     font-family: 'Inspiration', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -60,7 +60,7 @@ body {
     min-height: 600px;
     width: 100vw;
     background: #657779;
-    background: linear-gradient(180deg, rgba(101,119,121,1) 14%, #344648 73%);
+    background: linear-gradient(180deg, #657779 14%, #344648 73%);
 }
 .information-main {
     width: 88vw;

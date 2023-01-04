@@ -1,12 +1,4 @@
 document.addEventListener('DOMContentLoaded', function(){
-    window.onscroll = function(){
-        if(window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-            document.querySelector('body').style.backgroundColor = '#344648'
-        } else{
-            document.querySelector('body').style.backgroundColor = '#657779'
-        }
-    }
-
     var checkboxes = $("input[type='checkbox']"),
     submitButt = $("input[type='submit']");
 

@@ -1,16 +1,4 @@
 document.addEventListener('DOMContentLoaded', function(){
-    window.onscroll = function(){
-        if(window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-            if(window.innerWidth < 900){
-                document.querySelector('body').style.backgroundColor = '#344648'
-            }
-        } else{
-            if(window.innerWidth < 900){
-                document.querySelector('body').style.backgroundColor = '#657779'
-            }
-        }
-    }
-
     let lat_test = sessionStorage.getItem("lat_permanent");
     if (lat_test == null){
         if ("geolocation" in navigator) {

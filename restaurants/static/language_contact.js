@@ -1,7 +1,4 @@
 document.addEventListener('DOMContentLoaded', function(){
-
-
-
     let language_counter = 0
     document.getElementById('header-item-div').onclick = function(){
         language_counter += 1
@@ -14,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     }
 })
-
 
 function english(){
     document.getElementById('header-item-div').style.backgroundImage = 'url("/static/pics/german.png")'
