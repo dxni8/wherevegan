@@ -338,6 +338,9 @@ iframe {
 }
 
 @media(min-width: 900px){
+    body{
+        background-color: #344648;
+    }
     .header-items {
         right: 2vw;
         z-index: 1;
