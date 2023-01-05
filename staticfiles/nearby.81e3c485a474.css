@@ -33,7 +33,7 @@ body {
     color: rgba(27, 27, 27, 0.735);
 }
 #header-item-div{
-    background-image: url("/static/pics/german.png");
+    background-image: url("/static/pics/german.c55a70a92192.png");
     background-size: cover;
     width: 26px;
     height: 16px;
@@ -411,7 +411,7 @@ iframe {
         top: 5vh;
         bottom: 5vh;
         left: 5vw;
-        background-image: url("/static/pics/burger1.jpg");
+        background-image: url("/static/pics/burger1.a503fa24751a.jpg");
         background-position: 50%;
 
     }
