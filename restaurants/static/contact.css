@@ -216,6 +216,9 @@ body {
     .text2{
         font-size: 18px;
     }
+    .text3{
+        font-size: 18px;
+    }
     .link{
         color: rgb(23, 20, 35);
         font-size: 18px;
@@ -268,6 +271,9 @@ body {
         font-size: 20px;
     }
     .text2{
+        font-size: 20px;
+    }
+    .text3{
         font-size: 20px;
     }
     .link{
