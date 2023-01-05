@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inspiration', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+    text-align: center;
+    align-items: center;
+    background: rgb(101,119,121);
+    background: linear-gradient(180deg, rgba(101,119,121,1) 14%, rgba(52,70,72,1) 73%);
+}
+#header-item-div{
+    background-image: url("/static/pics/german.png");
+    background-size: cover;
+    width: 26px;
+    height: 16px;
+    position: absolute;
+    margin-right: 8px;
+    top: 30px;
+    right: 90px;
+}
+.header-link{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.header-link:hover{
+    color: rgb(0, 0, 0);
+}
+form{
+    width: 100vw;
+}
+.text{
+    color: white;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+#text-bottom{
+    margin-bottom: 60px;
+}
+.input{
+    background-color: rgba(255, 255, 255, 0.154);
+    border: 0.2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 15px;
+    width: 60vw;
+    margin-bottom: 14px;
+    display: inline-block;
+    color: white;
+    margin: auto;
+
+}
+.input::placeholder{
+    color: rgba(255, 255, 255, 0.594);
+}
+.button-submit{
+    position: relative;
+    padding: 15px 30px;
+    background-color: black;
+    border: 1px rgb(0, 0, 0) solid;
+    color: white;
+    border-radius: 12px;
+}
+.button-submit:hover{
+    bottom: 7px;
+    box-shadow: 3px 3px 3px 3px rgb(23, 22, 22);
+}
+.div-again{
+    width: 100vw;
+    height: 0px;
+    position: absolute;
+}
+.form-again{
+    width: 100vw;
+    height: 0px;
+}
+.button-again{
+    position: relative;
+    bottom: 20px;
+    background: none;
+    border: none;
+    text-decoration: underline;
+}
+.button-again:hover{
+    color: white;
+}
+[hiddden]{
+    display: none;
+    visibility: hidden;
+}
+@media (min-width: 600px) {
+    .input{
+        width: 30vw;
+    }
+}

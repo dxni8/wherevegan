@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #657779;
+    font-family: 'Inspiration', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#header-item-div{
+    background-image: url("/static/pics/german.png");
+    background-size: cover;
+    width: 26px;
+    height: 16px;
+    position: absolute;
+    margin-right: 8px;
+    top: 30px;
+    right: 90px;
+}
+.header-link{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.header-link:hover{
+    color: rgb(0, 0, 0);
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    min-height: 800px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background: rgb(101,119,121);
+    background: linear-gradient(180deg, #657779 14%, rgba(52,70,72,1) 73%);
+}
+.main-div{
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    width: 90vw;
+}
+.heading{
+    display: inline-block;
+    padding: 0;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 48px;
+    text-align: center;
+}
+.input{
+    background-color: rgba(255, 255, 255, 0.154);
+    border: 0.2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 15px;
+    width: 60vw;
+    margin-bottom: 14px;
+    display: inline-block;
+    color: white;
+}
+.input::placeholder{
+    color: rgba(255, 255, 255, 0.594);
+}
+#s2{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    z-index: -1;
+}
+.phone-div{
+    display: inline-block;
+    width: 60vw;
+    margin: 0;
+}
+#number{
+    width: 69%;
+}
+#countryCode{
+    width: 27%;
+    background-color: rgb(255, 255, 255);
+    border: 0.2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+
+    margin-right: 1%
+}
+.policy{
+    width: 70vw;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.text{
+    text-align: left;
+    color: white;
+    margin-left: 40px;
+}
+
+#check{
+    background-color: red;
+    margin-right: 30px;
+    float: left;
+    position: relative;
+    top: 35px;
+}
+.privacy_link{
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    position: relative;
+    bottom: 10px;
+}
+.privacy_link:hover{
+    color: rgb(179, 179, 179);
+}
+.button-submit{
+    background-color: rgb(23, 20, 35);
+    margin: auto;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 100px;
+    font-size: 13px;
+    height: 40px;
+}
+.button-submit:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+[hiddden]{
+    display: none;
+    visibility: hidden;
+}
+
+@media(min-width: 500px){
+    .policy{
+        width: 300px;
+    }
+}
+@media(min-width: 700px){
+    .input{
+        width: 50vw;
+    }
+    .phone-div{
+        width: 50vw;
+    }
+}
+@media(min-width: 1000px){
+    .input{
+        width: 40vw;
+    }
+    .phone-div{
+        width: 40vw;
+    }
+    .button-submit{
+        width: 120px;
+        
+    }
+}
+@media(min-width: 1200px){
+    .input{
+        width: 35vw;
+    }
+
+    .phone-div{
+        width: 35vw;
+    }
+}
