@@ -254,8 +254,11 @@ iframe {
 [hiddden]{
     display: none;
     visibility: hidden;
-}@media(max-width: 500px){
-
+}
+@media(max-width: 500px){
+    #mybutton {
+        padding: 40px 60px;
+    }
 }
 @media(max-width: 400px){
     .div-restaurants-distances {
