@@ -102,7 +102,6 @@ body {
     min-height: 40px;
     margin-top: 10px;
     margin-bottom: 15px;
-    border-radius: 6px;
     border: 0.5px solid #344648;
     background-color: #ffffff;
 }
@@ -112,6 +111,7 @@ body {
 }
 #mybutton {
     min-height: 40px;
+    border-radius: 8px;
 }
 .div_no_restaurants{
     margin-top: 40px;
