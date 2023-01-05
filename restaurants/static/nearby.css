@@ -111,13 +111,12 @@ body {
 .div_no_restaurants{
     margin-top: 40px;
     display: inline-block;
-    width: 100%;
+    width: 100vw;
     height: 100px;
-    margin: 20px;
+    padding: 20px;
 }
 .text_no_restaurants{
-    display: inline-block;
-    margin: auto;
+    margin-top: 15px;
     text-align: center;
     color: black;
 }
