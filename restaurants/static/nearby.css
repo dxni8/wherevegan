@@ -99,6 +99,7 @@ body {
     padding: 15px 25px;
     min-width: 140px;
     width: 25vw;
+    min-height: 30px;
     margin-top: 10px;
     margin-bottom: 15px;
     border-radius: 6px;
