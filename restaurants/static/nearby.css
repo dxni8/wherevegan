@@ -258,6 +258,13 @@ iframe {
     display: none;
     visibility: hidden;
 }
+@media(max-width: 500px){
+    #mybutton {
+        display: inline-block;
+        min-height: 40px;
+        color: black;
+    }
+}
 @media(max-width: 400px){
     .div-restaurants-distances {
         width: 100vw;
@@ -291,23 +298,14 @@ iframe {
         margin-top: 10px;
         margin-bottom: 15px;
         border: 0.5px solid #344648;
-        border-radius: 0px;
         background-color: #ffffff;
     }
     .button:hover{
         background-color: rgba(255, 255, 255, 0.309);
     }
     #mybutton {
-        color: black;
+        border-radius: 8px;
         height: 40px;
-        padding: 15px 25px;
-        min-width: 140px;
-        width: 20vw;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        border: 0.5px solid #344648;
-        border-radius: 0px;
-        background-color: #ffffff;
     }
     #mapButton {
         bottom: -20px;
