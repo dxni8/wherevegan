@@ -116,7 +116,7 @@ body {
     margin: 20px;
 }
 .text_no_restaurants{
-    align-items: center;
+    text-align: center;
     color: rgb(0, 0, 0);
 }
 
