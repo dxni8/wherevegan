@@ -111,7 +111,7 @@ body {
 }
 #mybutton {
     min-height: 40px;
-    border-radius: 0px;
+    border-radius: 8px;
 }
 .div_no_restaurants{
     margin-top: 40px;
@@ -297,12 +297,14 @@ iframe {
         width: 20vw;
         margin-top: 10px;
         margin-bottom: 15px;
-        border-radius: 6px;
         border: 0.5px solid #344648;
         background-color: #ffffff;
     }
     .button:hover{
         background-color: rgba(255, 255, 255, 0.309);
+    }
+    #mybutton {
+        border-radius: 1px;
     }
     #mapButton {
         bottom: -20px;
