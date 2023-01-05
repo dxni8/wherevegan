@@ -81,7 +81,7 @@ body {
     border: 0.5px solid #ffffff;
     border-radius: 8px;
     padding: 15px;
-    margin-top: 18vh;
+    margin-top: 14vh;
     width: 60vw;
     color: rgb(255, 255, 255);
     min-height: 40px;
@@ -261,8 +261,9 @@ iframe {
 @media(max-width: 500px){
     #mybutton {
         display: inline-block;
-        height: 40px;
+        min-height: 40px;
         color: black;
+        border-radius: 0px;
     }
 }
 @media(max-width: 400px){
@@ -304,7 +305,8 @@ iframe {
         background-color: rgba(255, 255, 255, 0.309);
     }
     #mybutton {
-        border-radius: 1px;
+        display: inline-block;
+        border-radius: 8px;
     }
     #mapButton {
         bottom: -20px;
