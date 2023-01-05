@@ -84,6 +84,7 @@ body {
     margin-top: 18vh;
     width: 60vw;
     color: rgb(255, 255, 255);
+    min-height: 40px;
 }
 #s1{
     opacity: 0;
@@ -97,7 +98,7 @@ body {
 .button {
     padding: 15px 25px;
     min-width: 140px;
-    width: 20vw;
+    width: 25vw;
     margin-top: 10px;
     margin-bottom: 15px;
     border-radius: 6px;
@@ -252,6 +253,8 @@ iframe {
 [hiddden]{
     display: none;
     visibility: hidden;
+}@media(max-width: 500px){
+
 }
 @media(max-width: 400px){
     .div-restaurants-distances {
@@ -428,6 +431,7 @@ iframe {
     }
     .button {
         position: absolute;
+        width: 20vw;
         top: 58vh;
         background-color: #29292a;
         color: white;
