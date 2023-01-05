@@ -108,16 +108,7 @@ body {
         font-size: 38px;
     }
     .main{
-        min-height: 800px;
-    }
-    .text1{
-        font-size: 16px;
-    }
-    .email{
-        font-size: 16px;
-    }
-    .text2{
-        font-size: 16px;
+        min-height: 850px;
     }
     #link_add{
         font-size: 16px;
@@ -125,7 +116,30 @@ body {
 }
 @media(max-width: 400px){
     .main{
-        min-height: 900px;
+        min-height: 1000px;
+    }
+}
+@media(max-width: 350px){
+    .main{
+        min-height: 1100px;
+    }
+}
+@media(max-width: 300px){
+    .main{
+        min-height: 1200px;
+    }
+    .email{
+        font-size: 16px;
+    }
+}
+@media(max-width: 270px){
+    .main{
+        min-height: 1300px;
+    }
+}
+@media(max-width: 240px){
+    .main{
+        min-height: 1400px;
     }
 }
 @media(max-width: 200px){
@@ -133,9 +147,12 @@ body {
         font-size: 14px;
     }
     .email{
-        font-size: 12px;
+        font-size: 14px;
     }
     .text2{
+        font-size: 14px;
+    }
+    .text3{
         font-size: 14px;
     }
     #link_add{
@@ -209,7 +226,14 @@ body {
     .email{
         font-size: 18px;
     }
-
+    @media(max-height: 780px){
+        .main{
+            min-height: 819px;
+        }
+        .main-div{
+            min-height: 663px;
+        }
+    }
     @media(max-height: 700px){
         .heading{
             font-size: 46px;

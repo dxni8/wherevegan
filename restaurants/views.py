@@ -919,4 +919,5 @@ git push heroku main
 heroku logs -t
 
 heroku run python3 manage.py 
+python3 manage.py collectstatic
 """
