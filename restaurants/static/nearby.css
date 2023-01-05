@@ -261,7 +261,7 @@ iframe {
 @media(max-width: 500px){
     #mybutton {
         display: inline-block;
-        min-height: 40px;
+        min-height: 46.5px;
         color: black;
     }
 }
@@ -305,7 +305,7 @@ iframe {
     }
     #mybutton {
         border-radius: 8px;
-        height: 40px;
+        height: 46.5px;
     }
     #mapButton {
         bottom: -20px;
