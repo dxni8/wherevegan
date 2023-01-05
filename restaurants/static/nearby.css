@@ -258,14 +258,6 @@ iframe {
     display: none;
     visibility: hidden;
 }
-@media(max-width: 500px){
-    #mybutton {
-        display: inline-block;
-        min-height: 40px;
-        color: black;
-        border-radius: 0px;
-    }
-}
 @media(max-width: 400px){
     .div-restaurants-distances {
         width: 100vw;
@@ -305,8 +297,9 @@ iframe {
         background-color: rgba(255, 255, 255, 0.309);
     }
     #mybutton {
-        display: inline-block;
-        border-radius: 8px;
+        border-radius: 0px;
+        color: black;
+        height: 40px;
     }
     #mapButton {
         bottom: -20px;
