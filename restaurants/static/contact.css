@@ -44,7 +44,8 @@ body {
 
 
 .main{
-    height: 105vh;
+    display: inline-block;
+    height: 105vh; 
     min-height: 600px;
     width: 100%;
     background: #657779;
@@ -103,46 +104,86 @@ body {
     color: rgb(191, 189, 189);
 }
 
-@media(max-width: 450px){
+@media(max-width: 630px){
+    .main{
+        height: 850px;
+    }
+}
+@media(max-width: 560px){
+    .main{
+        height: 900px;
+    }
+}
+@media(max-width: 490px){
+    .main{
+        height: 950px;
+    }
+}
+@media(max-width: 470px){
+    .main{
+        height: 1000px;
+    }
+}
+@media(max-width: 440px){
     .heading{
         font-size: 38px;
     }
     .main{
-        min-height: 850px;
+        height: 1080px;
     }
     #link_add{
         font-size: 16px;
     }
 }
-@media(max-width: 400px){
+@media(max-width: 395px){
     .main{
-        min-height: 1000px;
+        height: 1150px;
     }
 }
-@media(max-width: 350px){
+@media(max-width: 360px){
     .main{
-        min-height: 1100px;
+        height: 1300px;
+    }
+}
+@media(max-width: 322px){
+    .main{
+        height: 1400px;
     }
 }
 @media(max-width: 300px){
-    .main{
-        min-height: 1200px;
-    }
     .email{
         font-size: 16px;
     }
 }
-@media(max-width: 270px){
+@media(max-width: 290px){
     .main{
-        min-height: 1300px;
+        height: 1500px;
+    }
+}
+@media(max-width: 265px){
+    .main{
+        height: 1600px;
+    }
+}
+@media(max-width: 251px){
+    .main{
+        height: 1700px;
     }
 }
 @media(max-width: 240px){
     .main{
-        min-height: 1400px;
+        height: 1850px;
+    }
+}
+@media(max-width: 210px){
+    .main{
+        height: 1900px;
     }
 }
 @media(max-width: 200px){
+    .main{
+        height: 1350px;
+    }
     .text1{
         font-size: 14px;
     }

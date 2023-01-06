@@ -28,7 +28,7 @@ with open(os.path.join(BASE_DIR, 'secret_key.txt')) as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'wherevegan.herokuapp.com', 'www.wherevegan.de', 'wherevegan.de']
 
@@ -142,7 +142,7 @@ django_heroku.settings(locals())
 #HTTPS settings
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
-SECURE_SSL_REDIRECT = True
+#SECURE_SSL_REDIRECT = True
 
 #HSTS settings
 SECURE_HSTS_SECONDS = 31536000
