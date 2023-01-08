@@ -1,10 +1,11 @@
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Restaurant</title>
+    <title>{% translate "Your Restaurant" %}</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'add.css' %}"> 
     <script src="{% static 'language_add.js' %}"></script>
@@ -23,15 +24,15 @@
 <body>
 <main class="main">
     <div id="header-item-div"></div>
-    <a class="header-link" id="header-link1" href="{% url 'home' %}">home</a>
+    <a class="header-link" id="header-link1" href="{% url 'home' %}">{% translate "home" %}</a>
     <div class="main-div">
-        <h1 class="heading">Add Your Restaurant</h2>
+        <h1 class="heading">{% translate "Add Your Restaurant" %}</h2>
         <form action="gps_berechnen" method="post">
             {% csrf_token %}
-            <input class="input" id="" type="text" placeholder="first-name" name="first_name" required><br>
-            <input class="input" id="" type="text" placeholder="last-name" name="last_name" required><br>
-            <input class="input" id="Name" type="text" placeholder="restaurant-name" name="restaurant_name" required><br>
-            <input class="input" id="address" type="text" placeholder="restaurant-address" name="address" required><br>
+            <input class="input" id="" type="text" placeholder="{% translate 'first-name' %}" name="first_name" required><br>
+            <input class="input" id="" type="text" placeholder="{% translate 'last-name' %}" name="last_name" required><br>
+            <input class="input" id="Name" type="text" placeholder="{% translate 'restaurant-name' %}" name="restaurant_name" required><br>
+            <input class="input" id="address" type="text" placeholder="{% translate 'restaurant-address' %}" name="address" required><br>
             <input class="input" type="email" placeholder="email" name="email" required><br>
 
             <div class="phone-div">
@@ -255,16 +256,16 @@
                         <option data-countryCode="ZW" value="+263">Zimbabwe (+263)</option>
                     </optgroup>
                 </select>
-                <input class="input" type="text" id="number" placeholder="phone number" name="phone_number" required><br>
+                <input class="input" type="text" id="number" placeholder="{% translate 'phone number' %}" name="phone_number" required><br>
             </div>
             <div class="policy">
                 <input type="checkbox" id="check" name="gtc_check" value="true" required> 
-                <p class="text">I hereby agree that I am acting with the official permission of the restaurant in question and that I have read our GTCs
+                <p class="text">{% translate "I hereby agree that I am acting with the official permission of the restaurant in question and that I have read our GTCs" %}
                 </p> 
-                <a class="privacy_link" id="privacy_link1" href="{% url 'privacy' %}">General terms and conditions</a>
+                <a class="privacy_link" id="privacy_link1" href="{% url 'privacy' %}">{% translate "General terms and conditions" %}</a>
             </div>
             <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-            <input class="button-submit" type="submit" value="submit" disabled> <br>
+            <input class="button-submit" type="submit" value="submit" disabled><br>
         </form>
     </div>
 </main>

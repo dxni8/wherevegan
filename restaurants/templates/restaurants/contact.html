@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>{% translate "Contact" %}</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'contact.css' %}"> 
     <script src="{% static 'language_contact.js' %}"></script> 
@@ -16,10 +16,10 @@
         <header class="header">
             <ul class="header-items">
                 <li class="header-item"><div id="header-item-div"></div></li>
-                <li class="header-item"><a id="navbar-item-contact-home" href="{% url 'home' %}">home</a></li>
+                <li class="header-item"><a id="navbar-item-contact-home" href="{% url 'home' %}">{% translate "home" %}</a></li>
             </ul>
          </header>
-         <h1 class="heading">contact</h1>
+         <h1 class="heading">{% translate "contact" %}</h1>
          <div class="contact-information">
             <p class="text1">{% translate "We are a free online service based in Austria. With our service we do not seek any financial gain. As we aim for a more vegan oriented future for countries all over the world, we try to help fully vegan restaurants to attract more attention and as a result more customers. While we do our best, we cannot guarantee that every information on our website is true or current. If you have any questions, please contact us and we will respond as soon as possible." %}
             </p>

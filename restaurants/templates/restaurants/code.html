@@ -1,10 +1,11 @@
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=a, initial-scale=1.0">
-    <title>code</title>
+    <title>{% translate "verify" %}</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'code.css' %}">
     <script src="{% static 'language_code.js' %}"></script>
@@ -12,10 +13,10 @@
 <body>
     <main class="main">
         <div id="header-item-div"></div>
-        <a class="header-link" id="header-link1" href="{% url 'home' %}">home</a>
+        <a class="header-link" id="header-link1" href="{% url 'home' %}">{% translate "home" %}</a>
         <form action="phone_code" method="post">
-            <p class="text">We have sent you a confirmation email.</p><br>
-            <p class="text" id="text-bottom">Please check your spam folder as well!</p><br>
+            <p class="text">{% translate "We have sent you a confirmation email." %}</p><br>
+            <p class="text" id="text-bottom">{% translate "Please check your spam folder as well!" %}</p><br>
             {% csrf_token %}
             <input class="input" type="text" placeholder="123456" name="code"><br>
             <input class="input" type="hidden" name="ch" value="{{ ch }}"><br>
@@ -32,7 +33,7 @@
                 <input class="input" type="hidden" name="p" value="{{ p }}"><br>
                 <input class="input" type="hidden" name="a" value="{{ a }}"><br>
                 <input class="input" type="hidden" name="e" value="{{ e }}"><br>
-                <input class="button-again" type="submit" value="send again"><br>
+                <input class="button-again" type="submit" value="{% translate 'send again' %}"><br>
             </form>
         </div>
     </main>

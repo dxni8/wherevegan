@@ -1,3 +1,4 @@
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,43 +44,28 @@
 <body>
     <div id="header-item-div"></div>
     <div class="content">
-        <h3 class="heading">General Terms and Conditions (GTC)</h3>
+        <h3 class="heading">{% translate "General Terms and Conditions (GTC)" %}</h3>
         <ul>
             <li class="li-1">
-                We do not aim for 
-                any financial benefits.
+                {% translate "We do not aim for any financial benefits." %}
             </li>
             <li class="li-2">
-                By agreeing these terms you 
-                agree that we put the address of your restaurant on our website.
+                {% translate "By agreeing these terms you agree that we put the address of your restaurant on our website." %}
             </li>
-            <li class="li-3">It will result in an immediate as well as irreversible exclusion from our online service if your 
-                restaurant offers non-vegan dishes, as this is of fundamental importance to us. 
-                Every dish you offer, prepare and sell must be 100% vegan without exception.
+            <li class="li-3">
+                {% translate "It will result in an immediate as well as irreversible exclusion from our online service if your restaurant offers non-vegan dishes, as this is of fundamental importance to us. Every dish you offer, prepare and sell must be 100% vegan without exception." %}
             </li>
-            <li class="li-4">We maintain the right to delete your restaurant as well as your data from 
-                our database in situations we think it is approriate.
+            <li class="li-4">
+                {% translate "We maintain the right to delete your restaurant as well as your data from our database in situations we think it is approriate." %}
             </li>
             <li class="li-5">
-                As you are providing 
-                information and specific details about the particular business you take responsibility 
-                for its truth.
+                {% translate "As you are providing information and specific details about the particular business you take responsibility for its truth." %}
             </li>
             <li class="li-6">
-                By agreeing these terms you confirm that the restaurant belongs to 
-                you or you officially act with permission in the name of the particular business.
-                As the purpose of this website, we need the exact location of your 
-                restaurant as well as some additional information for being able to 
-                confirm whether you are the real owner of this business or not.
-                If you are trying to register 
-                a non existing restaurant or a restaurant without its permission you may face legal actions as we
-                do not take responsibility for any illegal activities done by our users. Arbitrarily registering 
-                restaurants from which you do not explicitly have the permission to share its data is 
-                not allowed and will face consequences.
+                {% translate "By agreeing these terms you confirm that the restaurant belongs to you or you officially act with permission in the name of the particular business. As the purpose of this website, we need the exact location of your restaurant as well as some additional information for being able to confirm whether you are the real owner of this business or not. If you are trying to register a non existing restaurant or a restaurant without its permission you may face legal actions as we do not take responsibility for any illegal activities done by our users. Arbitrarily registering restaurants from which you do not explicitly have the permission to share its data is not allowed and will face consequences." %}
             </li>
-            <li class="li-7">You are able to delete your data and your restaurant from our database anytime you want. Therefore 
-                send us an email with the specific request and we will make sure your wish 
-                will be fulfilled. 
+            <li class="li-7">
+                {% translate "You are able to delete your data and your restaurant from our database anytime you want. Therefore send us an email with the specific request and we will make sure your wish will be fulfilled." %}
             </li>
         </ul>
     </div>

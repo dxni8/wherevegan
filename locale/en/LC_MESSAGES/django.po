@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-08 13:25+0000\n"
+"POT-Creation-Date: 2023-01-08 20:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,119 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: restaurants/templates/restaurants/add.html:8
+msgid "Your Restaurant"
+msgstr ""
+
+#: restaurants/templates/restaurants/add.html:27
+#: restaurants/templates/restaurants/code.html:16
+#: restaurants/templates/restaurants/contact.html:19
+msgid "home"
+msgstr ""
+
+#: restaurants/templates/restaurants/add.html:29
+msgid "Add Your Restaurant"
+msgstr ""
+
+#: restaurants/templates/restaurants/add.html:32
+msgid "first-name"
+msgstr ""
+
+#: restaurants/templates/restaurants/add.html:33
+msgid "last-name"
+msgstr ""
+
+#: restaurants/templates/restaurants/add.html:34
+msgid "restaurant-name"
+msgstr ""
+
+#: restaurants/templates/restaurants/add.html:35
+msgid "restaurant-address"
+msgstr ""
+
+#: restaurants/templates/restaurants/add.html:259
+msgid "phone number"
+msgstr ""
+
+#: restaurants/templates/restaurants/add.html:263
+msgid ""
+"I hereby agree that I am acting with the official permission of the "
+"restaurant in question and that I have read our GTCs"
+msgstr ""
+
+#: restaurants/templates/restaurants/add.html:265
+msgid "General terms and conditions"
+msgstr ""
+
+#: restaurants/templates/restaurants/added.html:8
+msgid "added"
+msgstr ""
+
+#: restaurants/templates/restaurants/added.html:74
+msgid "Your restaurant"
+msgstr ""
+
+#: restaurants/templates/restaurants/added.html:74
+msgid "has been successfully added"
+msgstr ""
+
+#: restaurants/templates/restaurants/added.html:76
+msgid ""
+"However, before we will show your restaurant to our users, we need to make "
+"sure that you only offer vegan meals."
+msgstr ""
+
+#: restaurants/templates/restaurants/added.html:77
+msgid ""
+"Therefore, as a last step, please send photos of your current menu to our "
+"email address menu@wherevegan.de with your registered email address. Please "
+"do not forget to include the name of your restaurant and the address, "
+"otherwise we will not know to which restaurant the respective menu belongs."
+msgstr ""
+
+#: restaurants/templates/restaurants/added.html:78
+msgid ""
+"You will receive an email from us as soon as we have checked your restaurant "
+"and menu and approved them for our website."
+msgstr ""
+
+#: restaurants/templates/restaurants/added.html:79
+msgid "back"
+msgstr ""
+
+#: restaurants/templates/restaurants/again.html:16
+msgid "stop"
+msgstr ""
+
+#: restaurants/templates/restaurants/again.html:18
+msgid "Please enter the same email address as before!"
+msgstr ""
+
+#: restaurants/templates/restaurants/code.html:8
+msgid "verify"
+msgstr ""
+
+#: restaurants/templates/restaurants/code.html:18
+msgid "We have sent you a confirmation email."
+msgstr ""
+
+#: restaurants/templates/restaurants/code.html:19
+msgid "Please check your spam folder as well!"
+msgstr ""
+
+#: restaurants/templates/restaurants/code.html:36
+msgid "send again"
+msgstr ""
+
+#: restaurants/templates/restaurants/contact.html:8
+msgid "Contact"
+msgstr ""
+
+#: restaurants/templates/restaurants/contact.html:22
+#: restaurants/templates/restaurants/nearby.html:38
+msgid "contact"
+msgstr ""
 
 #: restaurants/templates/restaurants/contact.html:24
 msgid ""
@@ -46,8 +159,8 @@ msgstr ""
 msgid "add my restaurant"
 msgstr ""
 
-#: restaurants/templates/restaurants/nearby.html:38
-msgid "contact"
+#: restaurants/templates/restaurants/nearby.html:8
+msgid "vegan"
 msgstr ""
 
 #: restaurants/templates/restaurants/nearby.html:39
@@ -72,6 +185,62 @@ msgstr ""
 
 #: restaurants/templates/restaurants/nearby.html:82
 msgid "map"
+msgstr ""
+
+#: restaurants/templates/restaurants/privacy.html:47
+msgid "General Terms and Conditions (GTC)"
+msgstr ""
+
+#: restaurants/templates/restaurants/privacy.html:50
+msgid "We do not aim for any financial benefits."
+msgstr ""
+
+#: restaurants/templates/restaurants/privacy.html:53
+msgid ""
+"By agreeing these terms you agree that we put the address of your restaurant "
+"on our website."
+msgstr ""
+
+#: restaurants/templates/restaurants/privacy.html:56
+#, python-format
+msgid ""
+"It will result in an immediate as well as irreversible exclusion from our "
+"online service if your restaurant offers non-vegan dishes, as this is of "
+"fundamental importance to us. Every dish you offer, prepare and sell must be "
+"100%% vegan without exception."
+msgstr ""
+
+#: restaurants/templates/restaurants/privacy.html:59
+msgid ""
+"We maintain the right to delete your restaurant as well as your data from "
+"our database in situations we think it is approriate."
+msgstr ""
+
+#: restaurants/templates/restaurants/privacy.html:62
+msgid ""
+"As you are providing information and specific details about the particular "
+"business you take responsibility for its truth."
+msgstr ""
+
+#: restaurants/templates/restaurants/privacy.html:65
+msgid ""
+"By agreeing these terms you confirm that the restaurant belongs to you or "
+"you officially act with permission in the name of the particular business. "
+"As the purpose of this website, we need the exact location of your "
+"restaurant as well as some additional information for being able to confirm "
+"whether you are the real owner of this business or not. If you are trying to "
+"register a non existing restaurant or a restaurant without its permission "
+"you may face legal actions as we do not take responsibility for any illegal "
+"activities done by our users. Arbitrarily registering restaurants from which "
+"you do not explicitly have the permission to share its data is not allowed "
+"and will face consequences."
+msgstr ""
+
+#: restaurants/templates/restaurants/privacy.html:68
+msgid ""
+"You are able to delete your data and your restaurant from our database "
+"anytime you want. Therefore send us an email with the specific request and "
+"we will make sure your wish will be fulfilled."
 msgstr ""
 
 #: restaurants/views.py:51

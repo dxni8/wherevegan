@@ -1,10 +1,11 @@
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>added</title>
+    <title>{% translate "added" %}</title>
     {% load static %}
     <script src="{% static 'language_added.js' %}"></script>
     <style>
@@ -70,12 +71,12 @@ body {
     <div id="header-item-div"></div>
     <main class="main">
         <div class="main-div">
-            <h1 class="heading">Your restaurant '{{ restaurant_name }}' has been successfully added</h1>
+            <h1 class="heading">{% translate "Your restaurant" %} '{{ restaurant_name }}' {% translate "has been successfully added" %}</h1>
             <p class="text1">{{ address }}</p>
-            <p class="text2">However, before we will show your restaurant to our users, we need to make sure that you only offer vegan meals.</p>
-            <p class="important" >Therefore, as a last step, please send photos of your current menu to our email address menu@wherevegan.de with your registered email address. Please do not forget to include the name of your restaurant and the address, otherwise we will not know to which restaurant the respective menu belongs.</p>
-            <p class="text4">You will receive an email from us as soon as we have checked your restaurant and menu and approved them for our website.</p>
-            <a class="link" href="{% url 'home' %}">back</a>
+            <p class="text2">{% translate "However, before we will show your restaurant to our users, we need to make sure that you only offer vegan meals." %}</p>
+            <p class="important">{% translate "Therefore, as a last step, please send photos of your current menu to our email address menu@wherevegan.de with your registered email address. Please do not forget to include the name of your restaurant and the address, otherwise we will not know to which restaurant the respective menu belongs." %}</p>
+            <p class="text4">{% translate "You will receive an email from us as soon as we have checked your restaurant and menu and approved them for our website." %}</p>
+            <a class="link" href="{% url 'home' %}">{% translate "back" %}</a>
         </div>
     </main>
 </body>

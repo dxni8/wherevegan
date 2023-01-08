@@ -1,3 +1,4 @@
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,9 +13,9 @@
 <body>
     <main class="main">
         <div id="header-item-div"></div>
-        <a class="header-link" id="header-link1" href="{% url 'home' %}">stop</a>
+        <a class="header-link" id="header-link1" href="{% url 'home' %}">{% translate "stop" %}</a>
         <form action="email_again" method="post" class="form">
-            <p class="text">Please enter the same email address as before!</p><br>
+            <p class="text">{% translate "Please enter the same email address as before!" %}</p><br>
             {% csrf_token %}
             <input class="input" type="email" placeholder="email" name="email2"><br>
             <input class="input" type="hidden" name="r" value="{{ r }}"><br>

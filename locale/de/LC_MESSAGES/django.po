@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-08 13:25+0000\n"
+"POT-Creation-Date: 2023-01-08 20:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,136 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: restaurants/templates/restaurants/add.html:8
+#, fuzzy
+#| msgid "restaurants in"
+msgid "Your Restaurant"
+msgstr "Dein Restaurant"
+
+#: restaurants/templates/restaurants/add.html:27
+#: restaurants/templates/restaurants/code.html:16
+#: restaurants/templates/restaurants/contact.html:19
+msgid "home"
+msgstr "zurück"
+
+#: restaurants/templates/restaurants/add.html:29
+msgid "Add Your Restaurant"
+msgstr "Dein Restaurant Hinzufügen"
+
+#: restaurants/templates/restaurants/add.html:32
+msgid "first-name"
+msgstr "Vorname"
+
+#: restaurants/templates/restaurants/add.html:33
+msgid "last-name"
+msgstr "Nachname"
+
+#: restaurants/templates/restaurants/add.html:34
+msgid "restaurant-name"
+msgstr "Restaurantname"
+
+#: restaurants/templates/restaurants/add.html:35
+msgid "restaurant-address"
+msgstr "Restaurantadresse"
+
+#: restaurants/templates/restaurants/add.html:259
+msgid "phone number"
+msgstr "Telefonnummer"
+
+#: restaurants/templates/restaurants/add.html:263
+msgid ""
+"I hereby agree that I am acting with the official permission of the "
+"restaurant in question and that I have read our GTCs"
+msgstr ""
+"Hiermit stimme ich zu, dass ich mit offizieller Genehmigung des jeweiligen "
+"Restaurants handle und dass ich unsere AGB gelesen habe"
+
+#: restaurants/templates/restaurants/add.html:265
+msgid "General terms and conditions"
+msgstr "Allgemeine Geschätsbedingungen"
+
+#: restaurants/templates/restaurants/added.html:8
+msgid "added"
+msgstr "hinzugefügt"
+
+#: restaurants/templates/restaurants/added.html:74
+#, fuzzy
+#| msgid "restaurants in"
+msgid "Your restaurant"
+msgstr "Dein Restaurant"
+
+#: restaurants/templates/restaurants/added.html:74
+msgid "has been successfully added"
+msgstr "wurde erfolgreich hinzugefügt"
+
+#: restaurants/templates/restaurants/added.html:76
+msgid ""
+"However, before we will show your restaurant to our users, we need to make "
+"sure that you only offer vegan meals."
+msgstr ""
+"Jedoch bevor wir Ihr Restaurant endgültig unseren Nutzern anzeigen können, "
+"müssen wir sicherstellen, dass Sie nur vegane Gerichte zubereiten."
+
+#: restaurants/templates/restaurants/added.html:77
+msgid ""
+"Therefore, as a last step, please send photos of your current menu to our "
+"email address menu@wherevegan.de with your registered email address. Please "
+"do not forget to include the name of your restaurant and the address, "
+"otherwise we will not know to which restaurant the respective menu belongs."
+msgstr ""
+"Schicken Sie daher bitte als letzten Schritt Fotos Ihrer aktuellen "
+"Speisekarte an unsere E-Mail-Adresse menu@wherevegan.de, mit Ihrer bereits "
+"registrierten E-Mail-Adresse. Bitte vergessen Sie nicht den Namen sowie die "
+"Adresse Ihres Restaurants anzugeben, da wir sonst Ihre Speisekarte nicht "
+"Ihrem Restaurant zuordnen könnten."
+
+#: restaurants/templates/restaurants/added.html:78
+msgid ""
+"You will receive an email from us as soon as we have checked your restaurant "
+"and menu and approved them for our website."
+msgstr ""
+"Sie erhalten eine Benachrichtigung via email von uns, sobald wir ihr "
+"Restaurant sowie ihre Speisekarte überprüft und für unsere Website "
+"freigeschalten haben."
+
+#: restaurants/templates/restaurants/added.html:79
+msgid "back"
+msgstr "zurück"
+
+#: restaurants/templates/restaurants/again.html:16
+msgid "stop"
+msgstr "abbrechen"
+
+#: restaurants/templates/restaurants/again.html:18
+msgid "Please enter the same email address as before!"
+msgstr "Geben Sie bitte die gleiche Emailadresse wie zuvor ein!"
+
+#: restaurants/templates/restaurants/code.html:8
+msgid "verify"
+msgstr "überprüfen"
+
+#: restaurants/templates/restaurants/code.html:18
+msgid "We have sent you a confirmation email."
+msgstr ""
+"Wir haben Ihnen eine Email inklusive eines Bestätigungscodes geschickt!"
+
+#: restaurants/templates/restaurants/code.html:19
+msgid "Please check your spam folder as well!"
+msgstr "Schauen Sie bitte auch in Ihrem Spamordner nach!"
+
+#: restaurants/templates/restaurants/code.html:36
+msgid "send again"
+msgstr "nochmal senden"
+
+#: restaurants/templates/restaurants/contact.html:8
+msgid "Contact"
+msgstr "Kontakt"
+
+#: restaurants/templates/restaurants/contact.html:22
+#: restaurants/templates/restaurants/nearby.html:38
+msgid "contact"
+msgstr "Kontakt"
 
 #: restaurants/templates/restaurants/contact.html:24
 msgid ""
@@ -27,30 +157,44 @@ msgid ""
 "we cannot guarantee that every information on our website is true or "
 "current. If you have any questions, please contact us and we will respond as "
 "soon as possible."
-msgstr "Wir sind ein kostenloser Online-Dienst mit Sitz in Österreich. Mit unserem Service verfolgen wir keine finanziellen sowie gewerblichen Ziele und Vorteile. Da wir eine stärker vegan-orientierte Zukunft für Länder auf der ganzen Welt anstreben, versuchen wir rein veganen Restaurants zu helfen, indem wir mehr Aufmerksamkeit für diese erregen und diese in Folge mehr Kunden gewinnen können. Obwohl wir unser Bestes geben können wir nicht garantieren, dass alle Informationen auf unserer Website wahr oder aktuell sind. Wenn Sie Fragen haben, kontaktieren Sie uns bitte und wir werden Ihnen so schnell wie möglich antworten."
+msgstr ""
+"Wir sind ein kostenloser Online-Dienst mit Sitz in Österreich. Mit unserem "
+"Service verfolgen wir keine finanziellen sowie gewerblichen Ziele und "
+"Vorteile. Da wir eine stärker vegan-orientierte Zukunft für Länder auf der "
+"ganzen Welt anstreben, versuchen wir rein veganen Restaurants zu helfen, "
+"indem wir mehr Aufmerksamkeit für diese erregen und diese in Folge mehr "
+"Kunden gewinnen können. Obwohl wir unser Bestes geben können wir nicht "
+"garantieren, dass alle Informationen auf unserer Website wahr oder aktuell "
+"sind. Wenn Sie Fragen haben, kontaktieren Sie uns bitte und wir werden Ihnen "
+"so schnell wie möglich antworten."
 
 #: restaurants/templates/restaurants/contact.html:27
 msgid ""
 "If you notice that certain data (addresses, ...) are no longer up to date or "
 "even incorrect, or restaurants listed on this website also offer non-vegan "
 "food, we ask you to report this to us immediately."
-msgstr "Sollten Sie feststellen, dass bestimmte Daten (Adressen, ...) nicht mehr aktuell oder gar falsch sind, oder dass auf dieser Website gelistete Restaurants auch nicht-vegane Speisen anbieten, bitten wir Sie, uns dies umgehend zu melden."
+msgstr ""
+"Sollten Sie feststellen, dass bestimmte Daten (Adressen, ...) nicht mehr "
+"aktuell oder gar falsch sind, oder dass auf dieser Website gelistete "
+"Restaurants auch nicht-vegane Speisen anbieten, bitten wir Sie, uns dies "
+"umgehend zu melden."
 
 #: restaurants/templates/restaurants/contact.html:31
 msgid ""
 "If you want to add your restaurant to our database and furthermore list it "
 "on our website take a look at"
-msgstr "Falls Sie in Besitz eines Restaurants sind und interessiert sind es in unsere Datenbank aufzunehmen, sollten Sie bei bei folgendem Link vorbeischauen."
+msgstr ""
+"Falls Sie in Besitz eines Restaurants sind und interessiert sind es in "
+"unsere Datenbank aufzunehmen, sollten Sie bei bei folgendem Link "
+"vorbeischauen."
 
 #: restaurants/templates/restaurants/contact.html:32
-#, fuzzy
-#| msgid "restaurants in"
 msgid "add my restaurant"
-msgstr "Restaurants in"
+msgstr "mein Restaurant"
 
-#: restaurants/templates/restaurants/nearby.html:38
-msgid "contact"
-msgstr "Kontakt"
+#: restaurants/templates/restaurants/nearby.html:8
+msgid "vegan"
+msgstr "Finde vegane"
 
 #: restaurants/templates/restaurants/nearby.html:39
 msgid "recipes"
@@ -75,6 +219,82 @@ msgstr "suchen"
 #: restaurants/templates/restaurants/nearby.html:82
 msgid "map"
 msgstr "Karte"
+
+#: restaurants/templates/restaurants/privacy.html:47
+msgid "General Terms and Conditions (GTC)"
+msgstr "Allgemeine Geschäftsbedingungen (AGB)"
+
+#: restaurants/templates/restaurants/privacy.html:50
+msgid "We do not aim for any financial benefits."
+msgstr "Wir verfolgen keine gewerblichen sowie finanziellen Ziele."
+
+#: restaurants/templates/restaurants/privacy.html:53
+msgid ""
+"By agreeing these terms you agree that we put the address of your restaurant "
+"on our website."
+msgstr ""
+"Mit der Zustimmung zu diesen Bedingungen erklären Sie sich damit "
+"einverstanden, dass wir die Adresse Ihres Restaurants auf unserer Website "
+"veröffentlichen."
+
+#: restaurants/templates/restaurants/privacy.html:56
+msgid ""
+"It will result in an immediate as well as irreversible exclusion from our "
+"online service if your restaurant offers non-vegan dishes, as this is of "
+"fundamental importance to us. Every dish you offer, prepare and sell must be "
+"100%% vegan without exception."
+msgstr "Wenn Ihr Restaurant auch nicht-vegane Gerichte anbietet, führt dies zu einem sofortigen und unwiderruflichen Ausschluss von unserem Online-Dienst, da dies für uns von grundlegender Bedeutung ist. Jedes Gericht, das Sie anbieten, zubereiten und verkaufen, muss ausnahmslos 100% vegan sein."
+
+#: restaurants/templates/restaurants/privacy.html:59
+msgid ""
+"We maintain the right to delete your restaurant as well as your data from "
+"our database in situations we think it is approriate."
+msgstr ""
+"Wir behalten uns das Recht vor, sowohl Ihr Restaurant als auch Ihre Daten "
+"aus unserer Datenbank zu löschen, wenn wir dies für angemessen halten."
+
+#: restaurants/templates/restaurants/privacy.html:62
+msgid ""
+"As you are providing information and specific details about the particular "
+"business you take responsibility for its truth."
+msgstr ""
+"Da Sie Informationen und spezifische Details über das jeweilige Unternehmen "
+"bereitstellen, übernehmen Sie die Verantwortung für deren Richtigkeit."
+
+#: restaurants/templates/restaurants/privacy.html:65
+msgid ""
+"By agreeing these terms you confirm that the restaurant belongs to you or "
+"you officially act with permission in the name of the particular business. "
+"As the purpose of this website, we need the exact location of your "
+"restaurant as well as some additional information for being able to confirm "
+"whether you are the real owner of this business or not. If you are trying to "
+"register a non existing restaurant or a restaurant without its permission "
+"you may face legal actions as we do not take responsibility for any illegal "
+"activities done by our users. Arbitrarily registering restaurants from which "
+"you do not explicitly have the permission to share its data is not allowed "
+"and will face consequences."
+msgstr ""
+"Mit der Zustimmung zu diesen Bedingungen bestätigen Sie, dass das Restaurant "
+"Ihnen gehört oder Sie offiziell mit Genehmigung im Namen des jeweiligen "
+"Unternehmens handeln. Für den Zweck dieser Website benötigen wir den genauen "
+"Standort Ihres Restaurants sowie einige zusätzliche Informationen, um "
+"bestätigen zu können, ob Sie der tatsächliche Eigentümer dieses Unternehmens "
+"sind oder nicht. Wenn Sie versuchen, ein nicht existierendes Restaurant oder "
+"ein Restaurant ohne dessen Erlaubnis anzumelden, können Sie mit rechtlichen "
+"Schritten rechnen, da wir keine Verantwortung für illegale Aktivitäten "
+"unserer Nutzer übernehmen. Die willkürliche Registrierung von Restaurants, "
+"von denen Sie nicht ausdrücklich die Erlaubnis haben, ihre Daten zu teilen, "
+"ist nicht erlaubt und wird Konsequenzen nach sich ziehen."
+
+#: restaurants/templates/restaurants/privacy.html:68
+msgid ""
+"You are able to delete your data and your restaurant from our database "
+"anytime you want. Therefore send us an email with the specific request and "
+"we will make sure your wish will be fulfilled."
+msgstr ""
+"Sie haben jederzeit die Möglichkeit, Ihre Daten und Ihr Restaurant aus "
+"unserer Datenbank zu löschen. Schicken Sie uns dazu eine E-Mail mit Ihrer "
+"konkreten Anfrage und wir werden dafür sorgen, dass Ihr Wunsch erfüllt wird."
 
 #: restaurants/views.py:51
 msgid "hello"
