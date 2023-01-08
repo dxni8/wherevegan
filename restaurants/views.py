@@ -19,6 +19,8 @@ import phonenumbers
 from phonenumbers import NumberParseException
 from django.conf import settings
 
+from django.utils.translation import gettext as _
+from django.utils.translation import get_language, activate, gettext
 
 API_KEY = 'AIzaSyDU6RdLpMKVZuKX4d8IyfIW5l83TveSz4g'
 lat_speicher = ''
@@ -26,7 +28,10 @@ lon_speicher = ''
 
 # Create your views here.
 def home(request):
-    return render(request, 'restaurants/nearby.html')
+    trans = translate(language='de')
+    return render(request, 'restaurants/nearby.html', {
+        'trans': trans,
+    })
 def restaurant_add(request):
     return render(request, 'restaurants/add.html', {
         'recaptcha_site_key': settings.RECAPTCHA_SITE_KEY
@@ -38,6 +43,15 @@ def contact(request):
 def privacy(request):
     return render(request, 'restaurants/privacy.html')
 
+
+def translate(language):
+    curl_language = get_language()
+    try:
+        activate(language)
+        text = gettext('hello')
+    finally:
+        activate(curl_language)
+    return text
 
 def gps_berechnen(request):
     if request.method == 'POST':
@@ -327,8 +341,9 @@ def einzel_standort_berechnen(request):
                 restaurants_nähe.append(lokal)
                 
         if restaurants_nähe == []:
+            message = _('Unfortunately there are no vegan restaurants in your requested range.')
             return render(request, 'restaurants/nearby.html', {
-                'no_restaurants': 'Unfortunately there are no vegan restaurants in your requested range.'
+                'no_restaurants': message
             })
             #create a map
         point = (lat, lon)
@@ -920,4 +935,7 @@ heroku logs -t
 
 heroku run python3 manage.py 
 python3 manage.py collectstatic
+
+python3 manage.py makemessages --all
+python3 manage.py compilemessages
 """

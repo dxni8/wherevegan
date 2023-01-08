@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-08 13:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: restaurants/templates/restaurants/contact.html:24
+msgid ""
+"We are a free online service based in Austria. With our service we do not "
+"seek any financial gain. As we aim for a more vegan oriented future for "
+"countries all over the world, we try to help fully vegan restaurants to "
+"attract more attention and as a result more customers. While we do our best, "
+"we cannot guarantee that every information on our website is true or "
+"current. If you have any questions, please contact us and we will respond as "
+"soon as possible."
+msgstr "Wir sind ein kostenloser Online-Dienst mit Sitz in Österreich. Mit unserem Service verfolgen wir keine finanziellen sowie gewerblichen Ziele und Vorteile. Da wir eine stärker vegan-orientierte Zukunft für Länder auf der ganzen Welt anstreben, versuchen wir rein veganen Restaurants zu helfen, indem wir mehr Aufmerksamkeit für diese erregen und diese in Folge mehr Kunden gewinnen können. Obwohl wir unser Bestes geben können wir nicht garantieren, dass alle Informationen auf unserer Website wahr oder aktuell sind. Wenn Sie Fragen haben, kontaktieren Sie uns bitte und wir werden Ihnen so schnell wie möglich antworten."
+
+#: restaurants/templates/restaurants/contact.html:27
+msgid ""
+"If you notice that certain data (addresses, ...) are no longer up to date or "
+"even incorrect, or restaurants listed on this website also offer non-vegan "
+"food, we ask you to report this to us immediately."
+msgstr "Sollten Sie feststellen, dass bestimmte Daten (Adressen, ...) nicht mehr aktuell oder gar falsch sind, oder dass auf dieser Website gelistete Restaurants auch nicht-vegane Speisen anbieten, bitten wir Sie, uns dies umgehend zu melden."
+
+#: restaurants/templates/restaurants/contact.html:31
+msgid ""
+"If you want to add your restaurant to our database and furthermore list it "
+"on our website take a look at"
+msgstr "Falls Sie in Besitz eines Restaurants sind und interessiert sind es in unsere Datenbank aufzunehmen, sollten Sie bei bei folgendem Link vorbeischauen."
+
+#: restaurants/templates/restaurants/contact.html:32
+#, fuzzy
+#| msgid "restaurants in"
+msgid "add my restaurant"
+msgstr "Restaurants in"
+
+#: restaurants/templates/restaurants/nearby.html:38
+msgid "contact"
+msgstr "Kontakt"
+
+#: restaurants/templates/restaurants/nearby.html:39
+msgid "recipes"
+msgstr "Rezepte"
+
+#: restaurants/templates/restaurants/nearby.html:43
+msgid "Find vegan"
+msgstr "Finde vegane"
+
+#: restaurants/templates/restaurants/nearby.html:43
+msgid "restaurants in"
+msgstr "Restaurants in"
+
+#: restaurants/templates/restaurants/nearby.html:43
+msgid "your area"
+msgstr "deiner Nähe"
+
+#: restaurants/templates/restaurants/nearby.html:50
+msgid "search"
+msgstr "suchen"
+
+#: restaurants/templates/restaurants/nearby.html:82
+msgid "map"
+msgstr "Karte"
+
+#: restaurants/views.py:51
+msgid "hello"
+msgstr "Hallo"
+
+#: restaurants/views.py:344
+msgid "Unfortunately there are no vegan restaurants in your requested range."
+msgstr ""
+"Wir konnten leider keine veganen Restaurants in Ihrer angefragten Nähe "
+"finden."
+
+#: vegan2/settings.py:158
+msgid "English"
+msgstr ""
+
+#: vegan2/settings.py:159
+msgid "German"
+msgstr ""
+
+#: vegan2/urls.py:22
+msgid "admin/"
+msgstr ""
+
+#, fuzzy
+#~| msgid "restaurants in"
+#~ msgid "{{ no_restaurants }}"
+#~ msgstr "Restaurants in"
+
+#~ msgid "ding"
+#~ msgstr "Thing"

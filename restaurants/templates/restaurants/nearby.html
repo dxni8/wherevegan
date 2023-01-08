@@ -1,4 +1,4 @@
-
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en" style="margin-top: -25px; padding: 0;">
 <head>
@@ -24,25 +24,33 @@
         <div class="image"></div>
         <header class="header">
             <ul class="header-items">
+                {% get_current_language as LANGUAGE_CODE %} 
+                {% get_available_languages as LANGUAGES %} 
+                {% get_language_info_list for LANGUAGES as languages %} 
+                {% for lang in languages %} 
+                <li class="header-item">
+                    <a href="/{{ lang.code }}/">
+                        {{ lang.name_local }}
+                    </a>
+                </li>
+                {% endfor %}
                 <li class="header-item"><div id="header-item-div"></div></li>
-                <li class="header-item" id="header-item-contact"><a href="{% url 'contact' %}" id="navbar-item" class="navbar-item-contact">contact</a></li>
-                <li class="header-item-last"><a href="{% url 'recipes' %}" id="navbar-item-last">recipes</a></li>
+                <li class="header-item" id="header-item-contact"><a href="{% url 'contact' %}" id="navbar-item" class="navbar-item-contact">{% translate "contact" %}</a></li>
+                <li class="header-item-last"><a href="{% url 'recipes' %}" id="navbar-item-last">{% translate "recipes" %}</a></li>
             </ul>
         </header>
         <div class="information-div">
-            <h1 class="heading" id="heading_id">Find vegan<br/>restaurants in <br/>your area </h1> <br>
-            <p class="text"></p>
+            <h1 class="heading" id="heading_id">{% translate "Find vegan" %}<br/>{% translate "restaurants in" %}<br/>{% translate "your area" %}</h1><br>
         <form action="ip_location" method="post" class="form">
             {% csrf_token %}
                 <input type="text" placeholder="1 - 150(km)" name="range" class="input_field"> <br>
                 <input type="hidden" id="hidden1" name="lat1">
                 <input type="hidden" id="hidden2" name="lon1">
                 <input type="text" id="s1" name="s1" autocomplete="off">
-                <input type="submit" value="search" id="mybutton" class="button">
+                <input type="submit" value="{% translate 'search' %}" id="mybutton" class="button">
         </form>
         </div>
     </div> 
-
 <div class="div_no_restaurants">
     <p class="text_no_restaurants">{{ no_restaurants }}</p>
 </div>
@@ -71,7 +79,7 @@
             </ol>
         </div>
         {% if distanzen %}
-            <button id="mapButton">map</button>
+            <button id="mapButton">{% translate "map" %}</button>
         {% endif %}
         <div id="map">{{ map|safe }}</div>
     </div>

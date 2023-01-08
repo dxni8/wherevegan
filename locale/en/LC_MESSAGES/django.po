@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-08 13:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: restaurants/templates/restaurants/contact.html:24
+msgid ""
+"We are a free online service based in Austria. With our service we do not "
+"seek any financial gain. As we aim for a more vegan oriented future for "
+"countries all over the world, we try to help fully vegan restaurants to "
+"attract more attention and as a result more customers. While we do our best, "
+"we cannot guarantee that every information on our website is true or "
+"current. If you have any questions, please contact us and we will respond as "
+"soon as possible."
+msgstr ""
+
+#: restaurants/templates/restaurants/contact.html:27
+msgid ""
+"If you notice that certain data (addresses, ...) are no longer up to date or "
+"even incorrect, or restaurants listed on this website also offer non-vegan "
+"food, we ask you to report this to us immediately."
+msgstr ""
+
+#: restaurants/templates/restaurants/contact.html:31
+msgid ""
+"If you want to add your restaurant to our database and furthermore list it "
+"on our website take a look at"
+msgstr ""
+
+#: restaurants/templates/restaurants/contact.html:32
+msgid "add my restaurant"
+msgstr ""
+
+#: restaurants/templates/restaurants/nearby.html:38
+msgid "contact"
+msgstr ""
+
+#: restaurants/templates/restaurants/nearby.html:39
+msgid "recipes"
+msgstr ""
+
+#: restaurants/templates/restaurants/nearby.html:43
+msgid "Find vegan"
+msgstr ""
+
+#: restaurants/templates/restaurants/nearby.html:43
+msgid "restaurants in"
+msgstr ""
+
+#: restaurants/templates/restaurants/nearby.html:43
+msgid "your area"
+msgstr ""
+
+#: restaurants/templates/restaurants/nearby.html:50
+msgid "search"
+msgstr ""
+
+#: restaurants/templates/restaurants/nearby.html:82
+msgid "map"
+msgstr ""
+
+#: restaurants/views.py:51
+msgid "hello"
+msgstr ""
+
+#: restaurants/views.py:344
+msgid "Unfortunately there are no vegan restaurants in your requested range."
+msgstr ""
+
+#: vegan2/settings.py:158
+msgid "English"
+msgstr ""
+
+#: vegan2/settings.py:159
+msgid "German"
+msgstr ""
+
+#: vegan2/urls.py:22
+msgid "admin/"
+msgstr ""

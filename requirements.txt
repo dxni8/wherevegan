@@ -82,6 +82,7 @@ termcolor==1.1.0
 tomli==2.0.1
 tqdm==4.64.1
 urllib3==1.26.4
+watch==0.2.7
 Werkzeug==2.2.2
 whitenoise==6.2.0
 wincertstore==0.2

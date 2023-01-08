@@ -1,3 +1,4 @@
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en" style="margin-top: -25px; padding: 0;"></html>
 <head>
@@ -20,20 +21,15 @@
          </header>
          <h1 class="heading">contact</h1>
          <div class="contact-information">
-            <p class="text1">We are a free online service based in Austria. With our service we do not seek any 
-                financial gain. As we aim for a more vegan oriented future for countries all over the world, we try to help 
-                fully vegan restaurants to attract more attention and as a result more customers. While we do our best, 
-                we cannot guarantee that every information on our website is true or current. If you have any questions, 
-                please contact us and we will respond as soon as possible.
+            <p class="text1">{% translate "We are a free online service based in Austria. With our service we do not seek any financial gain. As we aim for a more vegan oriented future for countries all over the world, we try to help fully vegan restaurants to attract more attention and as a result more customers. While we do our best, we cannot guarantee that every information on our website is true or current. If you have any questions, please contact us and we will respond as soon as possible." %}
             </p>
             <p class="text3">
-                If you notice that certain data (addresses, ...) are no longer up to date or even incorrect, or restaurants listed on this website also offer non-vegan food, we ask you to report this to us immediately. 
+                {% translate "If you notice that certain data (addresses, ...) are no longer up to date or even incorrect, or restaurants listed on this website also offer non-vegan food, we ask you to report this to us immediately." %} 
             </p>
             <b><p class="email">email: contact@wherevegan.de</p></b>
             
-            <p class="text2">If you want to add your restaurant to our database and furthermore list it on our website
-                take a look at
-            </p> <a class="link" id="link_add" href="{% url 'restaurant_add' %}">add my restaurant</a>
+            <p class="text2">{% translate "If you want to add your restaurant to our database and furthermore list it on our website take a look at" %}
+            </p> <a class="link" id="link_add" href="{% url 'restaurant_add' %}">{% translate "add my restaurant" %}</a>
          </div>
     </div> 
 </main>
