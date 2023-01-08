@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-08 20:02+0000\n"
+"POT-Creation-Date: 2023-01-08 20:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,8 +247,123 @@ msgstr ""
 msgid "hello"
 msgstr ""
 
+#: restaurants/views.py:73
+msgid ""
+"Unfortunately something went wrong. It looks like you forgot to fill out a "
+"field."
+msgstr ""
+
+#: restaurants/views.py:78
+msgid ""
+"Unfortunately something went wrong. You can only register your restaurant by "
+"accepting our general terms and conditions!"
+msgstr ""
+
+#: restaurants/views.py:85
+msgid ""
+"Unfortunately something went wrong! Please check whether you only entered "
+"letters and not numbers for your first and last name"
+msgstr ""
+
+#: restaurants/views.py:89
+msgid "It looks like you entered an invalid email"
+msgstr ""
+
+#: restaurants/views.py:93
+msgid ""
+"Unfortunately something went wrong! Please check whether you entered a valid "
+"phone number!"
+msgstr ""
+
+#: restaurants/views.py:94
+msgid ""
+"Please use the international phone number format e164 following your country "
+"code!"
+msgstr ""
+
+#: restaurants/views.py:126
+msgid ""
+"Unfortunately something went wrong! Please check if you entered a correct "
+"address."
+msgstr ""
+
+#: restaurants/views.py:138 restaurants/views.py:144 restaurants/views.py:150
+#: restaurants/views.py:155 restaurants/views.py:160
+msgid ""
+"Unfortunately something went wrong! You can only enter a phone number "
+"located in the same country as your restaurant. If you are located near to a "
+"country border and are dealing with this problem please contact our support "
+"(contact@wherevegan.de) and we will manage this specific situation."
+msgstr ""
+
+#: restaurants/views.py:175
+msgid ""
+"Something went wrong! It looks like there is already a restaurant registered "
+"with the same credentials."
+msgstr ""
+
+#: restaurants/views.py:209
+msgid ""
+"Unfortunately something went wrong! It looks like you forgot to enter your "
+"code."
+msgstr ""
+
+#: restaurants/views.py:219 restaurants/views.py:326
+msgid "Unfortunately something went wrong. Please try again!"
+msgstr ""
+
+#: restaurants/views.py:230
+msgid ""
+"Unfortunately something went wrong. It looks like this restaurant is already "
+"registered."
+msgstr ""
+
+#: restaurants/views.py:234
+msgid "Your code is incorrect."
+msgstr ""
+
+#: restaurants/views.py:247 restaurants/views.py:265
+msgid "Unfortunately something went wrong! Please try again"
+msgstr ""
+
+#: restaurants/views.py:269
+msgid ""
+"Unfortunately something went wrong! It looks like you entered an invalid "
+"email address! Due to our safety protocols you will need to register your "
+"restaurant again!"
+msgstr ""
+
+#: restaurants/views.py:273
+msgid ""
+"Unfortunately something went wrong! It looks like you entered a different "
+"email address. Due to our safety protocols you will need to register your "
+"restaurant again!"
+msgstr ""
+
+#: restaurants/views.py:288
+msgid "Unfortunately something went wrong! Please try again!"
+msgstr ""
+
+#: restaurants/views.py:304 restaurants/views.py:309 restaurants/views.py:319
+msgid ""
+"Unfortunately something went wrong with your requested range. Please submit "
+"a number greater than 0 and smaller than 150. Thank you!"
+msgstr ""
+
+#: restaurants/views.py:314
+msgid "Unfortunately something went wrong with your request. Please try again!"
+msgstr ""
+
+#: restaurants/views.py:330
+msgid "Unfortunately something went wrong with tracking your coordinates"
+msgstr ""
+
 #: restaurants/views.py:344
 msgid "Unfortunately there are no vegan restaurants in your requested range."
+msgstr ""
+
+#: restaurants/views.py:476
+msgid "Unfortunately we were not able to send you an email. Please try again!"
 msgstr ""
 
 #: vegan2/settings.py:158

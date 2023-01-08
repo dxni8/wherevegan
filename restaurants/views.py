@@ -70,28 +70,28 @@ def gps_berechnen(request):
         address = request.POST.get('address') #um es als extra variable zu haben
         if restaurant.address == '' or restaurant.restaurant_name == '' or restaurant.email == '' or phone == '' or restaurant.first_name == '' or restaurant.last_name == '' or vorwahl == '':
             return render(request, 'restaurants/error.html', {
-                'error_message_not_enough_information': 'Unfortunately something went wrong. It looks like you forgot to fill out a field.'
+                'error_message_not_enough_information': _('Unfortunately something went wrong. It looks like you forgot to fill out a field.')
             })
         #überprüfen ob die gtc akzeptiert wurden
         if gtc_check != 'true':
             return render(request, 'restaurants/error.html', {
-                'error_message_gtc': 'Unfortunately something went wrong. You can only register your restaurant by accepting our general terms and conditions!'
+                'error_message_gtc': _('Unfortunately something went wrong. You can only register your restaurant by accepting our general terms and conditions!')
             })
         vorwahl = str(vorwahl)
         phone = str(phone)
         phone = vorwahl + phone
         if name_check(restaurant.first_name) == False or name_check(restaurant.last_name) == False:
             return render(request, 'restaurants/error.html', {
-                'error_message_name_wrong': 'Unfortunately something went wrong! Please check whether you only entered letters and not numbers for your first and last name'
+                'error_message_name_wrong': _('Unfortunately something went wrong! Please check whether you only entered letters and not numbers for your first and last name')
             })
         if email_check(restaurant.email) == False:
             return render(request, 'restaurants/error.html', {
-                'error_message_email_false': 'It looks like you entered an invalid email'
+                'error_message_email_false': _('It looks like you entered an invalid email')
             })
         if phonenumber_validate(phone) == False:
             return render(request, 'restaurants/error.html', {
-                'error_message_phone_number': 'Unfortunately something went wrong! Please check whether you entered a valid phone number!',
-                'error_message_e164': 'Please use the international phone number format e164 following your country code!'
+                'error_message_phone_number': _('Unfortunately something went wrong! Please check whether you entered a valid phone number!'),
+                'error_message_e164': _('Please use the international phone number format e164 following your country code!')
             })
 
         ##########
@@ -123,7 +123,7 @@ def gps_berechnen(request):
                 lon = geometry['location']['lng']
             else:
                 return render(request, 'restaurants/error.html',{
-                    'error_message_couldnt_locate_restaurant': "Unfortunately something went wrong! Please check if you entered a correct address."
+                    'error_message_couldnt_locate_restaurant': _("Unfortunately something went wrong! Please check if you entered a correct address.")
                 })
             restaurant.lat = lat
             restaurant.lon = lon
@@ -135,29 +135,29 @@ def gps_berechnen(request):
             if country_phone_number == 'United States':
                 if restaurant.country != 'United States' and restaurant.country != 'Canada':
                     return render(request, 'restaurants/error.html', {
-                    'error_message_country_different': "Unfortunately something went wrong! You can only enter a phone number located in the same country as your restaurant. If you are located near to a country border and are dealing with this problem please contact our support (contact@wherevegan.de) and we will manage this specific situation."
+                    'error_message_country_different': _("Unfortunately something went wrong! You can only enter a phone number located in the same country as your restaurant. If you are located near to a country border and are dealing with this problem please contact our support (contact@wherevegan.de) and we will manage this specific situation.")
                 })
             #vorwahl 7
             if country_phone_number == 'Қазақстан':
                 if restaurant.country != 'Қазақстан' and restaurant.country != 'Россия':
                     return render(request, 'restaurants/error.html', {
-                    'error_message_country_different': "Unfortunately something went wrong! You can only enter a phone number located in the same country as your restaurant. If you are located near to a country border and are dealing with this problem please contact our support (contact@wherevegan.de) and we will manage this specific situation."
+                    'error_message_country_different': _("Unfortunately something went wrong! You can only enter a phone number located in the same country as your restaurant. If you are located near to a country border and are dealing with this problem please contact our support (contact@wherevegan.de) and we will manage this specific situation.")
                 })
                 
             if country_phone_number == 'Dominica':
                 if restaurant.country != 'Dominica' and restaurant.country != 'República Dominicana':
                     return render(request, 'restaurants/error.html', {
-                    'error_message_country_different': "Unfortunately something went wrong! You can only enter a phone number located in the same country as your restaurant. If you are located near to a country border and are dealing with this problem please contact our support (contact@wherevegan.de) and we will manage this specific situation."
+                    'error_message_country_different': _("Unfortunately something went wrong! You can only enter a phone number located in the same country as your restaurant. If you are located near to a country border and are dealing with this problem please contact our support (contact@wherevegan.de) and we will manage this specific situation.")
                 })
             if country_phone_number == 'Việt Nam':
                 if restaurant.country != 'Việt Nam' and restaurant.country != 'British Virgin Islands' and restaurant.country != 'United States':
                     return render(request, 'restaurants/error.html', {
-                    'error_message_country_different': "Unfortunately something went wrong! You can only enter a phone number located in the same country as your restaurant. If you are located near to a country border and are dealing with this problem please contact our support (contact@wherevegan.de) and we will manage this specific situation."
+                    'error_message_country_different': _("Unfortunately something went wrong! You can only enter a phone number located in the same country as your restaurant. If you are located near to a country border and are dealing with this problem please contact our support (contact@wherevegan.de) and we will manage this specific situation.")
                 })
             if country_phone_number != 'United States' and country_phone_number != 'Қазақстан' and country_phone_number != 'Dominica' and country_phone_number != 'Việt Nam':
                 if not restaurant.country == country_phone_number:
                     return render(request, 'restaurants/error.html', {
-                        'error_message_country_different': "Unfortunately something went wrong! You can only enter a phone number located in the same country as your restaurant. If you are located near to a country border and are dealing with this problem please contact our support (contact@wherevegan.de) and we will manage this specific situation."
+                        'error_message_country_different': _("Unfortunately something went wrong! You can only enter a phone number located in the same country as your restaurant. If you are located near to a country border and are dealing with this problem please contact our support (contact@wherevegan.de) and we will manage this specific situation.")
                     })
 
             #überprüfen ob es das restaurant schon gibt
@@ -172,7 +172,7 @@ def gps_berechnen(request):
                         pub.delete()
                         continue
                     return render(request, 'restaurants/error.html', {
-                        'error_message_restaurant_already_exists': 'Something went wrong! It looks like there is already a restaurant registered with the same credentials.'
+                        'error_message_restaurant_already_exists': _('Something went wrong! It looks like there is already a restaurant registered with the same credentials.')
                     })
             restaurant.save()
             phone_code = create_code()
@@ -206,7 +206,7 @@ def phone_code_view(request):
         email = request.POST.get('e')
         if code == '' or code_hashed == '' or restaurant_name == '' or address == '' or phone == '' or email == '':
             return render(request, 'restaurants/error.html', {
-                'error_message_fehlende_informationen': 'Unfortunately something went wrong! It looks like you forgot to enter your code.'
+                'error_message_fehlende_informationen': _('Unfortunately something went wrong! It looks like you forgot to enter your code.')
             })
         
         code = int(code)
@@ -216,7 +216,7 @@ def phone_code_view(request):
                 restaurant_richtig = standort_restaurant.objects.get(restaurant_name=restaurant_name, address=address, email=email)
             except ObjectDoesNotExist:
                 return render(request, 'restaurants/error.html', {
-                'error_message_restaurantdaten_verändert': 'Unfortunately something went wrong. Please try again!'
+                'error_message_restaurantdaten_verändert': _('Unfortunately something went wrong. Please try again!')
                 })
             if restaurant_richtig.verified == False:
                 restaurant_richtig.verified = True
@@ -227,11 +227,11 @@ def phone_code_view(request):
                 })
             else:
                 return render(request, 'restaurants/error.html', {
-                'error_message_already_verified': 'Unfortunately something went wrong. It looks like this restaurant is already registered.'
+                'error_message_already_verified': _('Unfortunately something went wrong. It looks like this restaurant is already registered.')
             })
         else:
             return render(request, 'restaurants/error.html', {
-                'error_message_falscher_code': 'Your code is incorrect.'
+                'error_message_falscher_code': _('Your code is incorrect.')
             })
     else:
         return render(request, 'restaurants/error.html')
@@ -244,7 +244,7 @@ def email_again_view(request):
     email = request.POST.get('e')
     if restaurant_name == '' or address == '' or phone == '' or email == '':
         return render(request, 'restaurants/error.html', {
-            'error_message_fehlende_informationen_again': 'Unfortunately something went wrong! Please try again'
+            'error_message_fehlende_informationen_again': _('Unfortunately something went wrong! Please try again')
         })
     return render(request, 'restaurants/again.html', {
         'r': restaurant_name,
@@ -262,15 +262,15 @@ def email_again(request):
         email_again = request.POST.get('email2')
         if restaurant_name == '' or address == '' or phone == '' or email == '' or email_again == '':
             return render(request, 'restaurants/error.html', {
-                'error_message_fehlende_informationen_again': 'Unfortunately something went wrong! Please try again'
+                'error_message_fehlende_informationen_again': _('Unfortunately something went wrong! Please try again')
             }) 
         if email_check(email_again) == False:
             return render(request, 'restaurants/error.html', {
-                'error_message_email_invalid': 'Unfortunately something went wrong! It looks like you entered an invalid email address! Due to our safety protocols you will need to register your restaurant again!'
+                'error_message_email_invalid': _('Unfortunately something went wrong! It looks like you entered an invalid email address! Due to our safety protocols you will need to register your restaurant again!')
             }) 
         if not email_again == email:
             return render(request, 'restaurants/error.html', {
-                'error_message_email_not_same': 'Unfortunately something went wrong! It looks like you entered a different email address. Due to our safety protocols you will need to register your restaurant again!'
+                'error_message_email_not_same': _('Unfortunately something went wrong! It looks like you entered a different email address. Due to our safety protocols you will need to register your restaurant again!')
             }) 
         code = create_code()
         code_senden(email_again, code, request)
@@ -285,7 +285,7 @@ def email_again(request):
         })
     else:
         return render(request, 'restaurants/error.html', {
-                'error_message_email_again_error': 'Unfortunately something went wrong! Please try again!'
+                'error_message_email_again_error': _('Unfortunately something went wrong! Please try again!')
             }) 
         
 def einzel_standort_berechnen(request):
@@ -301,33 +301,33 @@ def einzel_standort_berechnen(request):
                 print(letter)
         if range_user == '':
             return render(request, 'restaurants/error.html', {
-                'error_message_range': 'Unfortunately something went wrong with your requested range. Please submit a number greater than 0 and smaller than 150. Thank you!'
+                'error_message_range': _('Unfortunately something went wrong with your requested range. Please submit a number greater than 0 and smaller than 150. Thank you!')
             })
         for char in range_user:
             if ord(char) < 48 or ord(char) > 57:
                 return render(request, 'restaurants/error.html', {
-                'error_message_range': 'Unfortunately something went wrong with your requested range. Please submit a number greater than 0 and smaller than 150. Thank you!'
+                'error_message_range': _('Unfortunately something went wrong with your requested range. Please submit a number greater than 0 and smaller than 150. Thank you!')
             })
         #honeyput search
         if safety != '':
             return render(request, 'restaurants/error.html', {
-                'error_message_safety': 'Unfortunately something went wrong with your request. Please try again!'
+                'error_message_safety': _('Unfortunately something went wrong with your request. Please try again!')
             })
         range_user = float(range_user)
         if range_user <= 0 or range_user > 150:
             return render(request, 'restaurants/error.html', {
-                'error_message_range': 'Unfortunately something went wrong with your requested range. Please submit a number greater than 0 and smaller than 150. Thank you!'
+                'error_message_range': _('Unfortunately something went wrong with your requested range. Please submit a number greater than 0 and smaller than 150. Thank you!')
             })
         try:
             lat = float(lat)
             lon = float(lon)
         except ValueError:
             return render(request, 'restaurants/error.html', {
-                'error_message_latlon_safety': 'Unfortunately something went wrong. Please try again!'
+                'error_message_latlon_safety': _('Unfortunately something went wrong. Please try again!')
             })
         if lat < 0 or lat > 180 or lon < 0 or lon > 360:
             return render(request, 'restaurants/error.html', {
-                'error_message_lon_lat': 'Unfortunately something went wrong with tracking your coordinates'
+                'error_message_lon_lat': _('Unfortunately something went wrong with tracking your coordinates')
             })
         distanzen = []
         country_user = land_user_berechnen(lat, lon)
@@ -447,20 +447,6 @@ def phonenumber_validate(number):
 def code_senden(email, code, request):
     import requests
 
-    """
-    * Send an email message by using Infobip API.
-    *
-    * This example is already pre-populated with your account data:
-    * 1. Your account Base URL
-    * 2. Your account API key
-    * 3. Your recipient email
-    *
-    * THIS CODE EXAMPLE IS READY BY DEFAULT. HIT RUN TO SEND THE MESSAGE!
-    *
-    * Send email API reference: https://www.infobip.com/docs/api#channels/email/send-email
-    * See Readme file for details.
-    """
-
     BASE_URL = "https://yren59.api.infobip.com"
     API_KEY = "App fef126cbee854003dca50539819919c9-0154e71d-cd21-4429-879e-aab138fffdf1"
 
@@ -487,7 +473,7 @@ def code_senden(email, code, request):
     status_code = int(response.status_code)
     if not status_code == 200:
         return render(request, 'restaurants/error.html', {
-                'error_message_email_code_not_send': 'Unfortunately we were not able to send you an email. Please try again!'
+                'error_message_email_code_not_send': _('Unfortunately we were not able to send you an email. Please try again!')
             })
     
 def create_code():

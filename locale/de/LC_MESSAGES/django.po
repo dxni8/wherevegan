@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-08 20:02+0000\n"
+"POT-Creation-Date: 2023-01-08 20:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -238,12 +238,22 @@ msgstr ""
 "veröffentlichen."
 
 #: restaurants/templates/restaurants/privacy.html:56
+#, fuzzy, python-format
+#| msgid ""
+#| "It will result in an immediate as well as irreversible exclusion from our "
+#| "online service if your restaurant offers non-vegan dishes, as this is of "
+#| "fundamental importance to us. Every dish you offer, prepare and sell must "
+#| "be 100%% vegan without exception."
 msgid ""
 "It will result in an immediate as well as irreversible exclusion from our "
 "online service if your restaurant offers non-vegan dishes, as this is of "
 "fundamental importance to us. Every dish you offer, prepare and sell must be "
 "100%% vegan without exception."
-msgstr "Wenn Ihr Restaurant auch nicht-vegane Gerichte anbietet, führt dies zu einem sofortigen und unwiderruflichen Ausschluss von unserem Online-Dienst, da dies für uns von grundlegender Bedeutung ist. Jedes Gericht, das Sie anbieten, zubereiten und verkaufen, muss ausnahmslos 100% vegan sein."
+msgstr ""
+"Wenn Ihr Restaurant auch nicht-vegane Gerichte anbietet, führt dies zu einem "
+"sofortigen und unwiderruflichen Ausschluss von unserem Online-Dienst, da "
+"dies für uns von grundlegender Bedeutung ist. Jedes Gericht, das Sie "
+"anbieten, zubereiten und verkaufen, muss ausnahmslos 100% vegan sein."
 
 #: restaurants/templates/restaurants/privacy.html:59
 msgid ""
@@ -300,11 +310,129 @@ msgstr ""
 msgid "hello"
 msgstr "Hallo"
 
+#: restaurants/views.py:73
+msgid ""
+"Unfortunately something went wrong. It looks like you forgot to fill out a "
+"field."
+msgstr "Leider lief etwas schief! Bitte füllen Sie jedes Feld aus!"
+
+#: restaurants/views.py:78
+msgid ""
+"Unfortunately something went wrong. You can only register your restaurant by "
+"accepting our general terms and conditions!"
+msgstr "Leider lief etwas schief! Sie können nur ein Restaurant auf unserer Website listen, wenn Sie unseren allgemeinen Geschäftsbedingungen zustimmen."
+
+#: restaurants/views.py:85
+msgid ""
+"Unfortunately something went wrong! Please check whether you only entered "
+"letters and not numbers for your first and last name"
+msgstr "Leider lief etwas schief. Bitte geben Sie nur Buchstaben für Ihren Vor- und Nachnamen ein!"
+
+#: restaurants/views.py:89
+msgid "It looks like you entered an invalid email"
+msgstr "Bitte geben Sie eine richtige Emailadresse ein!"
+
+#: restaurants/views.py:93
+msgid ""
+"Unfortunately something went wrong! Please check whether you entered a valid "
+"phone number!"
+msgstr "Leider lief etwas schief. Bitte geben Sie eine richtige Telefonnummer ein!"
+
+#: restaurants/views.py:94
+msgid ""
+"Please use the international phone number format e164 following your country "
+"code!"
+msgstr "Bitte nutzen Sie das internationale e164 Telefonnummernformat (Beginnend mit einem +)!"
+
+#: restaurants/views.py:126
+msgid ""
+"Unfortunately something went wrong! Please check if you entered a correct "
+"address."
+msgstr "Leider lief etwas schief. Bitte geben Sie eine richtige Adresse ein!"
+
+#: restaurants/views.py:138 restaurants/views.py:144 restaurants/views.py:150
+#: restaurants/views.py:155 restaurants/views.py:160
+msgid ""
+"Unfortunately something went wrong! You can only enter a phone number "
+"located in the same country as your restaurant. If you are located near to a "
+"country border and are dealing with this problem please contact our support "
+"(contact@wherevegan.de) and we will manage this specific situation."
+msgstr "Leider leif etwas schief. Sie können nur eine Telefonnummer für Ihr Restaurant registrieren, wenn diese auch im selben Land wie Ihr Restaurant angemeldet ist. Falls Sie sich nahe an einer Staatsgrenze befinden und / oder trotz richtiger Daten mit diesem Problem zu kämpfen haben, bitten wir Sie sich an unseren Support (contact@wherevegan.de) zu wenden und wir werden uns darum kümmern!"
+
+#: restaurants/views.py:175
+msgid ""
+"Something went wrong! It looks like there is already a restaurant registered "
+"with the same credentials."
+msgstr "Leider lief etwas schief! Es schaut so aus, als wäre schon ein Restaurant mit den gleichen Daten registriert. Falls Sie jedoch bereits alle Schritte befolgt haben und Ihr Restaurant immer noch nicht auf unsere Website gelistet ist, überprüfen Sie bitte, ob Sie auch bereits Ihre Speisekarte per Mail mit Ihrer registrierten Emailadresse an menu@wherevegan.de, inklusive Ihres Restaurantnames sowie Adresse, geschickt haben."
+
+#: restaurants/views.py:209
+msgid ""
+"Unfortunately something went wrong! It looks like you forgot to enter your "
+"code."
+msgstr "Leider lief etwas schief. Sie haben vergessen Ihren Code einzugeben!"
+
+#: restaurants/views.py:219 restaurants/views.py:326
+msgid "Unfortunately something went wrong. Please try again!"
+msgstr "Leider lief etwas schief. Bitte versuchen Sie es erneut!"
+
+#: restaurants/views.py:230
+msgid ""
+"Unfortunately something went wrong. It looks like this restaurant is already "
+"registered."
+msgstr "Leider lief etwas schief. Es schaut aus, als wäre dieses Restaurant bereits registriert."
+
+#: restaurants/views.py:234
+msgid "Your code is incorrect."
+msgstr "Der Code ist inkorrekt!"
+
+#: restaurants/views.py:247 restaurants/views.py:265
+msgid "Unfortunately something went wrong! Please try again"
+msgstr "Leider lief etwas schief. Bitte versuchen Sie es erneut!"
+
+#: restaurants/views.py:269
+msgid ""
+"Unfortunately something went wrong! It looks like you entered an invalid "
+"email address! Due to our safety protocols you will need to register your "
+"restaurant again!"
+msgstr "Leider lief etwas schief. Es schaut so aus, als wäre Ihre Emailadresse inkorrekt! Aufgrund unserer Sicherheitsprotokolle müssen Sie Ihr Restaurant erneut registrieren!"
+
+#: restaurants/views.py:273
+msgid ""
+"Unfortunately something went wrong! It looks like you entered a different "
+"email address. Due to our safety protocols you will need to register your "
+"restaurant again!"
+msgstr "Leider lief etwas schief. Ihre Emailadressen stimmen nicht überein! Aufgrund unserer Sicherheitsprotokolle müssen Sie Ihr Restaurant erneut registrieren!"
+
+#: restaurants/views.py:288
+msgid "Unfortunately something went wrong! Please try again!"
+msgstr "Leider lief etwas schief. Bitte versuchen Sie es erneut!"
+
+#: restaurants/views.py:304 restaurants/views.py:309 restaurants/views.py:319
+msgid ""
+"Unfortunately something went wrong with your requested range. Please submit "
+"a number greater than 0 and smaller than 150. Thank you!"
+msgstr "Bitte geben Sie eine Zahl größer als 0 und kleiner als 150 ein! (ohne 'km')"
+
+#: restaurants/views.py:314
+#, fuzzy
+#| msgid ""
+#| "Unfortunately there are no vegan restaurants in your requested range."
+msgid "Unfortunately something went wrong with your request. Please try again!"
+msgstr "Leider lief etwas schief mit Ihrer Anfrage. Bitte versuchen Sie es erneut!"
+
+#: restaurants/views.py:330
+msgid "Unfortunately something went wrong with tracking your coordinates"
+msgstr "Leider lief etwas schief! Wir konnten Ihren Standort nicht herausfinden."
+
 #: restaurants/views.py:344
 msgid "Unfortunately there are no vegan restaurants in your requested range."
 msgstr ""
 "Wir konnten leider keine veganen Restaurants in Ihrer angefragten Nähe "
 "finden."
+
+#: restaurants/views.py:476
+msgid "Unfortunately we were not able to send you an email. Please try again!"
+msgstr "Leider lief etwas schief. Wir konnten Ihnen keine Email zukommen lassen!"
 
 #: vegan2/settings.py:158
 msgid "English"
