@@ -17,7 +17,7 @@ body {
     list-style: none;
     position: absolute;
     right: 20px;
-    margin-top: 45px;
+    margin-top: 40px;
 }
 .header-item {
     margin-right: 10px;
@@ -32,26 +32,65 @@ body {
 .header-item a:hover{
     color: rgba(27, 27, 27, 0.735);
 }
-#header-item-div{
-    background-image: url("/static/pics/german.png");
-    background-size: cover;
-    width: 26px;
-    height: 16px;
-    position: relative;
-    margin-right: 8px;
-    top: 3px;
+#header-item-none{
+    display: none;
+    visibility: hidden;
 }
-.header-item-last {
-    margin-right: 10px;
+#header-item-contact {
+    display: inline-block;
+    position: absolute;
+    right: 120px;
+}
+#header-item-contact a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
     display: inline-block;
 }
-.header-item-last a{
-    color: #ffffff;
-    text-decoration: none;
-    margin-right: 5px;
+#header-item-contact a:hover{
+    color: rgba(41, 41, 41, 0.735);
 }
-.header-item-last a:hover{
-    color: rgba(27, 27, 27, 0.735);
+
+#navbar-item-last{
+    color: white;
+}
+#navbar-item{
+    color: white;
+}
+.li-dropdown{
+    position: relative;
+    background-color: #3d4a4b;
+    color: white;
+    margin: 0;
+    padding: 15px;
+    margin-top: -14px;
+    border-radius: 0px 0px 8px 8px;
+    width: 100px;
+}
+.li-dropdown:hover .dropdown{
+    display: block;
+}
+.dropdown{
+    position: absolute;
+    list-style: none;
+    background-color: #3d4a4b;
+    padding: 15px;
+    border-radius: 0px 0px 8px 8px;
+    text-align: center;
+    right: 0px;
+    display: none;
+    width: 100px;
+}
+.dropdown-item{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-top: 5px;
+}
+.dropdown-item a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.dropdown-item a:hover{
+    text-decoration: underline;
 }
 
 
@@ -372,7 +411,7 @@ iframe {
     .header-items {
         right: 2vw;
         z-index: 1;
-        margin-top: 14px;
+        margin-top: 13px;
     }
     .header-item a{
         color: black;
@@ -392,8 +431,18 @@ iframe {
     .header-item-last a:hover{
         background-color: rgba(0, 0, 0, 0.735);
         color: #ffffff;
+        padding-bottom: 80px;
     }
-
+    #header-item-contact a{
+        color: rgb(0, 0, 0);
+    }
+    .li-dropdown{
+        background-color: #344648;
+        
+    }
+    .dropdown{
+        background-color: #344648;
+    }
 
     #information{
         display: inline-block;

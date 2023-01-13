@@ -8,11 +8,9 @@
     <title>code</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'again.css' %}">
-    <script src="{% static 'language_again.js' %}"></script>
 </head>
 <body>
     <main class="main">
-        <div id="header-item-div"></div>
         <a class="header-link" id="header-link1" href="{% url 'home' %}">{% translate "stop" %}</a>
         <form action="email_again" method="post" class="form">
             <p class="text">{% translate "Please enter the same email address as before!" %}</p><br>

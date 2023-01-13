@@ -8,11 +8,9 @@
     <title>{% translate "verify" %}</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'code.css' %}">
-    <script src="{% static 'language_code.js' %}"></script>
 </head>
 <body>
     <main class="main">
-        <div id="header-item-div"></div>
         <a class="header-link" id="header-link1" href="{% url 'home' %}">{% translate "home" %}</a>
         <form action="phone_code" method="post">
             <p class="text">{% translate "We have sent you a confirmation email." %}</p><br>

@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% translate "added" %}</title>
     {% load static %}
-    <script src="{% static 'language_added.js' %}"></script>
     <style>
         * {
     box-sizing: border-box;
@@ -68,7 +67,6 @@ body {
     </style>
 </head>
 <body>
-    <div id="header-item-div"></div>
     <main class="main">
         <div class="main-div">
             <h1 class="heading">{% translate "Your restaurant" %} '{{ restaurant_name }}' {% translate "has been successfully added" %}</h1>

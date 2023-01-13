@@ -8,14 +8,12 @@
     <title>{% translate "Contact" %}</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'contact.css' %}"> 
-    <script src="{% static 'language_contact.js' %}"></script> 
 </head>
 <body>
 <main class="main">
     <div class="main-div">
         <header class="header">
             <ul class="header-items">
-                <li class="header-item"><div id="header-item-div"></div></li>
                 <li class="header-item"><a id="navbar-item-contact-home" href="{% url 'home' %}">{% translate "home" %}</a></li>
             </ul>
          </header>

@@ -24,19 +24,24 @@
         <div class="image"></div>
         <header class="header">
             <ul class="header-items">
+                <li class="header-item" id="header-item-none"><a id="navbar-item-last"></a></li>
                 {% get_current_language as LANGUAGE_CODE %} 
                 {% get_available_languages as LANGUAGES %} 
                 {% get_language_info_list for LANGUAGES as languages %} 
-                {% for lang in languages %} 
-                <li class="header-item">
-                    <a href="/{{ lang.code }}/">
-                        {{ lang.name_local }}
-                    </a>
+                <li id="header-item-contact"><a href="{% url 'contact' %}" id="navbar-item">{% translate "contact" %}</a>
+                </li> 
+                <li class="li-dropdown"> languages
+                    <ul class="dropdown">
+                        <hr>
+                        {% for lang in languages %} 
+                        <li class="dropdown-item">
+                            <a href="/{{ lang.code }}/">
+                                {{ lang.name_local }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                    </ul>
                 </li>
-                {% endfor %}
-                <li class="header-item"><div id="header-item-div"></div></li>
-                <li class="header-item" id="header-item-contact"><a href="{% url 'contact' %}" id="navbar-item" class="navbar-item-contact">{% translate "contact" %}</a></li>
-                <li class="header-item-last"><a href="{% url 'recipes' %}" id="navbar-item-last">{% translate "recipes" %}</a></li>
             </ul>
         </header>
         <div class="information-div">
@@ -51,9 +56,11 @@
         </form>
         </div>
     </div> 
+{% if no_restaurant %}
 <div class="div_no_restaurants">
     <p class="text_no_restaurants">{{ no_restaurants }}</p>
 </div>
+{% endif %}
 {% if distanzen %}
 <div id="content">
     <div class="div-restaurants-distances">
