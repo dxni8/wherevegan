@@ -350,7 +350,7 @@ def einzel_standort_berechnen(request):
         m = folium.Map(width=800, height=500, location=point,
         zoom_start=15
         )
-        folium.Marker([lat, lon], popup='Current Location',
+        folium.Marker([lat, lon], popup=_('Current Location'),
         icon=folium.Icon(color='black')).add_to(m)
             
             

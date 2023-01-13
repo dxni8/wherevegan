@@ -299,6 +299,11 @@ iframe {
     display: none;
     visibility: hidden;
 }
+@media(max-width: 600px){
+    #information{
+        height: 110vh;
+    }
+}
 @media(max-width: 500px){
     #mybutton {
         display: inline-block;

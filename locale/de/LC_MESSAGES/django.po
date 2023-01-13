@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-13 11:41+0000\n"
+"POT-Creation-Date: 2023-01-13 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,42 +19,42 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: restaurants/templates/restaurants/add.html:8
-#, fuzzy
+#, 
 #| msgid "restaurants in"
 msgid "Your Restaurant"
 msgstr "Dein Restaurant"
 
-#: restaurants/templates/restaurants/add.html:27
+#: restaurants/templates/restaurants/add.html:26
 #: restaurants/templates/restaurants/code.html:14
 #: restaurants/templates/restaurants/contact.html:17
 msgid "home"
 msgstr "zurück"
 
-#: restaurants/templates/restaurants/add.html:29
+#: restaurants/templates/restaurants/add.html:28
 msgid "Add Your Restaurant"
 msgstr "Dein Restaurant Hinzufügen"
 
-#: restaurants/templates/restaurants/add.html:32
+#: restaurants/templates/restaurants/add.html:31
 msgid "first-name"
 msgstr "Vorname"
 
-#: restaurants/templates/restaurants/add.html:33
+#: restaurants/templates/restaurants/add.html:32
 msgid "last-name"
 msgstr "Nachname"
 
-#: restaurants/templates/restaurants/add.html:34
+#: restaurants/templates/restaurants/add.html:33
 msgid "restaurant-name"
 msgstr "Restaurantname"
 
-#: restaurants/templates/restaurants/add.html:35
+#: restaurants/templates/restaurants/add.html:34
 msgid "restaurant-address"
 msgstr "Restaurantadresse"
 
-#: restaurants/templates/restaurants/add.html:259
+#: restaurants/templates/restaurants/add.html:258
 msgid "phone number"
 msgstr "Telefonnummer"
 
-#: restaurants/templates/restaurants/add.html:263
+#: restaurants/templates/restaurants/add.html:262
 msgid ""
 "I hereby agree that I am acting with the official permission of the "
 "restaurant in question and that I have read our GTCs"
@@ -62,7 +62,7 @@ msgstr ""
 "Hiermit stimme ich zu, dass ich mit offizieller Genehmigung des jeweiligen "
 "Restaurants handle und dass ich unsere AGB gelesen habe"
 
-#: restaurants/templates/restaurants/add.html:265
+#: restaurants/templates/restaurants/add.html:264
 msgid "General terms and conditions"
 msgstr "Allgemeine Geschätsbedingungen"
 
@@ -71,7 +71,7 @@ msgid "added"
 msgstr "hinzugefügt"
 
 #: restaurants/templates/restaurants/added.html:72
-#, fuzzy
+#, 
 #| msgid "restaurants in"
 msgid "Your restaurant"
 msgstr "Dein Restaurant"
@@ -455,6 +455,10 @@ msgid "Unfortunately there are no vegan restaurants in your requested range."
 msgstr ""
 "Wir konnten leider keine veganen Restaurants in Ihrer angefragten Nähe "
 "finden."
+
+#: restaurants/views.py:353
+msgid "Current Location"
+msgstr "Aktuelle Position"
 
 #: restaurants/views.py:476
 msgid "Unfortunately we were not able to send you an email. Please try again!"
