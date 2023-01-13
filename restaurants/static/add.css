@@ -143,6 +143,7 @@ body {
     }
     .input{
         width: 80vw;
+        border: 0.5px solid rgb(255, 255, 255);
     }
     .phone-div{
         width: 80vw;
