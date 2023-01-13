@@ -16,21 +16,10 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    
     text-align: center;
     align-items: center;
     background: rgb(101,119,121);
     background: linear-gradient(180deg, rgba(101,119,121,1) 14%, rgba(52,70,72,1) 73%);
-}
-#header-item-div{
-    background-image: url("/static/pics/german.png");
-    background-size: cover;
-    width: 26px;
-    height: 16px;
-    position: absolute;
-    margin-right: 8px;
-    top: 30px;
-    right: 90px;
 }
 .header-link{
     color: white;

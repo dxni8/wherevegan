@@ -19,6 +19,15 @@ body {
     right: 20px;
     margin-top: 45px;
 }
+#header-item-div{
+    background-image: url("/static/pics/german.c55a70a92192.png");
+    background-size: cover;
+    width: 26px;
+    height: 16px;
+    position: relative;
+    margin-right: 8px;
+    top: 4px;
+}
 .header-item {
     margin-right: 10px;
     display: inline-block;
