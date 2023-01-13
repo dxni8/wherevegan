@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', function(){
-    let language_counter = 0
+    document.querySelector('.li-dropdown').onclick = function(){
+            if(document.querySelector('.dropdown').style.display == 'none'){
+                document.querySelector('.dropdown').style.display = 'block'
+                document.getElementById('wait').style.display = 'block'
+            }
+            else{
+                document.querySelector('.dropdown').style.display = 'none'
+                document.getElementById('wait').style.display = 'none'
+            }
+    }
     let counter_map = 0
     document.getElementById('mapButton').onclick = function(){
         counter_map = counter_map + 1;

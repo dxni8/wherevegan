@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-08 20:20+0000\n"
+"POT-Creation-Date: 2023-01-13 11:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,8 @@ msgid "Your Restaurant"
 msgstr ""
 
 #: restaurants/templates/restaurants/add.html:27
-#: restaurants/templates/restaurants/code.html:16
-#: restaurants/templates/restaurants/contact.html:19
+#: restaurants/templates/restaurants/code.html:14
+#: restaurants/templates/restaurants/contact.html:17
 msgid "home"
 msgstr ""
 
@@ -66,21 +66,21 @@ msgstr ""
 msgid "added"
 msgstr ""
 
-#: restaurants/templates/restaurants/added.html:74
+#: restaurants/templates/restaurants/added.html:72
 msgid "Your restaurant"
 msgstr ""
 
-#: restaurants/templates/restaurants/added.html:74
+#: restaurants/templates/restaurants/added.html:72
 msgid "has been successfully added"
 msgstr ""
 
-#: restaurants/templates/restaurants/added.html:76
+#: restaurants/templates/restaurants/added.html:74
 msgid ""
 "However, before we will show your restaurant to our users, we need to make "
 "sure that you only offer vegan meals."
 msgstr ""
 
-#: restaurants/templates/restaurants/added.html:77
+#: restaurants/templates/restaurants/added.html:75
 msgid ""
 "Therefore, as a last step, please send photos of your current menu to our "
 "email address menu@wherevegan.de with your registered email address. Please "
@@ -88,21 +88,21 @@ msgid ""
 "otherwise we will not know to which restaurant the respective menu belongs."
 msgstr ""
 
-#: restaurants/templates/restaurants/added.html:78
+#: restaurants/templates/restaurants/added.html:76
 msgid ""
 "You will receive an email from us as soon as we have checked your restaurant "
 "and menu and approved them for our website."
 msgstr ""
 
-#: restaurants/templates/restaurants/added.html:79
+#: restaurants/templates/restaurants/added.html:77
 msgid "back"
 msgstr ""
 
-#: restaurants/templates/restaurants/again.html:16
+#: restaurants/templates/restaurants/again.html:14
 msgid "stop"
 msgstr ""
 
-#: restaurants/templates/restaurants/again.html:18
+#: restaurants/templates/restaurants/again.html:16
 msgid "Please enter the same email address as before!"
 msgstr ""
 
@@ -110,15 +110,15 @@ msgstr ""
 msgid "verify"
 msgstr ""
 
-#: restaurants/templates/restaurants/code.html:18
+#: restaurants/templates/restaurants/code.html:16
 msgid "We have sent you a confirmation email."
 msgstr ""
 
-#: restaurants/templates/restaurants/code.html:19
+#: restaurants/templates/restaurants/code.html:17
 msgid "Please check your spam folder as well!"
 msgstr ""
 
-#: restaurants/templates/restaurants/code.html:36
+#: restaurants/templates/restaurants/code.html:34
 msgid "send again"
 msgstr ""
 
@@ -126,12 +126,12 @@ msgstr ""
 msgid "Contact"
 msgstr ""
 
-#: restaurants/templates/restaurants/contact.html:22
-#: restaurants/templates/restaurants/nearby.html:38
+#: restaurants/templates/restaurants/contact.html:20
+#: restaurants/templates/restaurants/nearby.html:31
 msgid "contact"
 msgstr ""
 
-#: restaurants/templates/restaurants/contact.html:24
+#: restaurants/templates/restaurants/contact.html:22
 msgid ""
 "We are a free online service based in Austria. With our service we do not "
 "seek any financial gain. As we aim for a more vegan oriented future for "
@@ -142,20 +142,20 @@ msgid ""
 "soon as possible."
 msgstr ""
 
-#: restaurants/templates/restaurants/contact.html:27
+#: restaurants/templates/restaurants/contact.html:25
 msgid ""
 "If you notice that certain data (addresses, ...) are no longer up to date or "
 "even incorrect, or restaurants listed on this website also offer non-vegan "
 "food, we ask you to report this to us immediately."
 msgstr ""
 
-#: restaurants/templates/restaurants/contact.html:31
+#: restaurants/templates/restaurants/contact.html:29
 msgid ""
 "If you want to add your restaurant to our database and furthermore list it "
 "on our website take a look at"
 msgstr ""
 
-#: restaurants/templates/restaurants/contact.html:32
+#: restaurants/templates/restaurants/contact.html:30
 msgid "add my restaurant"
 msgstr ""
 
@@ -163,45 +163,45 @@ msgstr ""
 msgid "vegan"
 msgstr ""
 
-#: restaurants/templates/restaurants/nearby.html:39
-msgid "recipes"
+#: restaurants/templates/restaurants/nearby.html:33
+msgid "languages"
 msgstr ""
 
-#: restaurants/templates/restaurants/nearby.html:43
+#: restaurants/templates/restaurants/nearby.html:48
 msgid "Find vegan"
 msgstr ""
 
-#: restaurants/templates/restaurants/nearby.html:43
+#: restaurants/templates/restaurants/nearby.html:48
 msgid "restaurants in"
 msgstr ""
 
-#: restaurants/templates/restaurants/nearby.html:43
+#: restaurants/templates/restaurants/nearby.html:48
 msgid "your area"
 msgstr ""
 
-#: restaurants/templates/restaurants/nearby.html:50
+#: restaurants/templates/restaurants/nearby.html:55
 msgid "search"
 msgstr ""
 
-#: restaurants/templates/restaurants/nearby.html:82
+#: restaurants/templates/restaurants/nearby.html:89
 msgid "map"
 msgstr ""
 
-#: restaurants/templates/restaurants/privacy.html:47
+#: restaurants/templates/restaurants/privacy.html:45
 msgid "General Terms and Conditions (GTC)"
 msgstr ""
 
-#: restaurants/templates/restaurants/privacy.html:50
+#: restaurants/templates/restaurants/privacy.html:48
 msgid "We do not aim for any financial benefits."
 msgstr ""
 
-#: restaurants/templates/restaurants/privacy.html:53
+#: restaurants/templates/restaurants/privacy.html:51
 msgid ""
 "By agreeing these terms you agree that we put the address of your restaurant "
 "on our website."
 msgstr ""
 
-#: restaurants/templates/restaurants/privacy.html:56
+#: restaurants/templates/restaurants/privacy.html:54
 #, python-format
 msgid ""
 "It will result in an immediate as well as irreversible exclusion from our "
@@ -210,19 +210,19 @@ msgid ""
 "100%% vegan without exception."
 msgstr ""
 
-#: restaurants/templates/restaurants/privacy.html:59
+#: restaurants/templates/restaurants/privacy.html:57
 msgid ""
 "We maintain the right to delete your restaurant as well as your data from "
 "our database in situations we think it is approriate."
 msgstr ""
 
-#: restaurants/templates/restaurants/privacy.html:62
+#: restaurants/templates/restaurants/privacy.html:60
 msgid ""
 "As you are providing information and specific details about the particular "
 "business you take responsibility for its truth."
 msgstr ""
 
-#: restaurants/templates/restaurants/privacy.html:65
+#: restaurants/templates/restaurants/privacy.html:63
 msgid ""
 "By agreeing these terms you confirm that the restaurant belongs to you or "
 "you officially act with permission in the name of the particular business. "
@@ -236,7 +236,7 @@ msgid ""
 "and will face consequences."
 msgstr ""
 
-#: restaurants/templates/restaurants/privacy.html:68
+#: restaurants/templates/restaurants/privacy.html:66
 msgid ""
 "You are able to delete your data and your restaurant from our database "
 "anytime you want. Therefore send us an email with the specific request and "
