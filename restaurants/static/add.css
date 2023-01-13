@@ -137,6 +137,22 @@ body {
     visibility: hidden;
 }
 
+@media(max-width: 500px){
+    .heading{
+        font-size: 40px;
+    }
+    .input{
+        width: 80vw;
+    }
+    .phone-div{
+        width: 80vw;
+    }
+}
+@media(max-width: 400px){
+    .heading{
+        font-size: 34px;
+    }
+}
 @media(min-width: 500px){
     .policy{
         width: 300px;

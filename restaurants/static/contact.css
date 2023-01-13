@@ -94,6 +94,9 @@ body {
 .link:hover{
     color: rgb(191, 189, 189);
 }
+#link_add{
+    font-size: 20px;
+}
 
 @media(max-width: 630px){
     .main{
@@ -121,9 +124,6 @@ body {
     }
     .main{
         height: 1080px;
-    }
-    #link_add{
-        font-size: 16px;
     }
 }
 @media(max-width: 395px){
@@ -261,6 +261,9 @@ body {
     .email{
         font-size: 18px;
     }
+    #link_add{
+        font-size: 18px;
+    }
     @media(max-height: 850px){
         .main{
             min-height: 895px;
@@ -292,7 +295,7 @@ body {
         }
     }
 }
-@media(min-width: 1050px){
+@media(min-width: 1150px){
     .heading{
         font-size: 52px;
     }
@@ -309,6 +312,9 @@ body {
         font-size: 20px;
     }
     .link{
+        font-size: 20px;
+    }
+    #link_add{
         font-size: 20px;
     }
     .email{
