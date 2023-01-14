@@ -36,8 +36,8 @@ def restaurant_add(request):
     return render(request, 'restaurants/add.html', {
         'recaptcha_site_key': settings.RECAPTCHA_SITE_KEY
     })
-def contact(request):
-    return render(request, 'restaurants/contact.html')
+def contact2(request):
+    return render(request, 'restaurants/contact2.html')
 def privacy(request):
     return render(request, 'restaurants/privacy.html')
 
