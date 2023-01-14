@@ -36,7 +36,7 @@ body {
 
 .main{
     display: inline-block;
-    height: 105vh; 
+    height: 120vh; 
     min-height: 600px;
     width: 100%;
     background: #657779;
@@ -70,11 +70,11 @@ body {
 }
 .text2{
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 200;
 }
 .text3{
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 200;
 }
 .email{
     color: rgb(23, 20, 35);
@@ -97,53 +97,65 @@ body {
 #link_add{
     font-size: 20px;
 }
-
-@media(max-width: 630px){
-    .main{
-        height: 850px;
-    }
-}
-@media(max-width: 560px){
+@media(max-width: 670px){
     .main{
         height: 900px;
     }
 }
-@media(max-width: 490px){
+@media(max-width: 633px){
     .main{
-        height: 950px;
+        height: 1050px;
     }
 }
-@media(max-width: 470px){
+@media(max-width: 516px){
     .main{
-        height: 1000px;
+        height: 1100px;
     }
 }
-@media(max-width: 440px){
+@media(max-width: 485px){
     .heading{
         font-size: 38px;
     }
     .main{
-        height: 1080px;
+        height: 1200px;
     }
 }
-@media(max-width: 395px){
-    .main{
-        height: 1170px;
-    }
-}
-@media(max-width: 360px){
+@media(max-width: 410px){
     .main{
         height: 1300px;
     }
 }
-@media(max-width: 322px){
+@media(max-width: 380px){
     .main{
         height: 1400px;
     }
 }
-@media(max-width: 300px){
+@media(max-width: 350px){
+    .main{
+        height: 1500px;
+    }
+}
+@media(max-width: 330px){
+    .main{
+        height: 1300px;
+    }
+    .text1{
+        font-size: 18px;
+    }
     .email{
-        font-size: 16px;
+        font-size: 18px;
+    }
+    .text2{
+        font-size: 18px;
+    }
+    .text3{
+        font-size: 18px;
+    }
+    #link_add{
+        font-size: 18px;
+    }
+    .email{
+        font-size: 18px;
     }
 }
 @media(max-width: 290px){

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-13 15:42+0000\n"
+"POT-Creation-Date: 2023-01-14 14:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,42 +19,40 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: restaurants/templates/restaurants/add.html:8
-#, 
-#| msgid "restaurants in"
 msgid "Your Restaurant"
 msgstr "Dein Restaurant"
 
-#: restaurants/templates/restaurants/add.html:26
-#: restaurants/templates/restaurants/code.html:14
-#: restaurants/templates/restaurants/contact.html:17
+#: restaurants/templates/restaurants/add.html:27
+#: restaurants/templates/restaurants/code.html:15
+#: restaurants/templates/restaurants/contact.html:18
 msgid "home"
 msgstr "zurück"
 
-#: restaurants/templates/restaurants/add.html:28
+#: restaurants/templates/restaurants/add.html:29
 msgid "Add Your Restaurant"
 msgstr "Dein Restaurant Hinzufügen"
 
-#: restaurants/templates/restaurants/add.html:31
+#: restaurants/templates/restaurants/add.html:32
 msgid "first-name"
 msgstr "Vorname"
 
-#: restaurants/templates/restaurants/add.html:32
+#: restaurants/templates/restaurants/add.html:33
 msgid "last-name"
 msgstr "Nachname"
 
-#: restaurants/templates/restaurants/add.html:33
+#: restaurants/templates/restaurants/add.html:34
 msgid "restaurant-name"
 msgstr "Restaurantname"
 
-#: restaurants/templates/restaurants/add.html:34
+#: restaurants/templates/restaurants/add.html:35
 msgid "restaurant-address"
 msgstr "Restaurantadresse"
 
-#: restaurants/templates/restaurants/add.html:258
+#: restaurants/templates/restaurants/add.html:259
 msgid "phone number"
 msgstr "Telefonnummer"
 
-#: restaurants/templates/restaurants/add.html:262
+#: restaurants/templates/restaurants/add.html:263
 msgid ""
 "I hereby agree that I am acting with the official permission of the "
 "restaurant in question and that I have read our GTCs"
@@ -62,7 +60,7 @@ msgstr ""
 "Hiermit stimme ich zu, dass ich mit offizieller Genehmigung des jeweiligen "
 "Restaurants handle und dass ich unsere AGB gelesen habe"
 
-#: restaurants/templates/restaurants/add.html:264
+#: restaurants/templates/restaurants/add.html:265
 msgid "General terms and conditions"
 msgstr "Allgemeine Geschätsbedingungen"
 
@@ -70,17 +68,15 @@ msgstr "Allgemeine Geschätsbedingungen"
 msgid "added"
 msgstr "hinzugefügt"
 
-#: restaurants/templates/restaurants/added.html:72
-#, 
-#| msgid "restaurants in"
+#: restaurants/templates/restaurants/added.html:73
 msgid "Your restaurant"
 msgstr "Dein Restaurant"
 
-#: restaurants/templates/restaurants/added.html:72
+#: restaurants/templates/restaurants/added.html:73
 msgid "has been successfully added"
 msgstr "wurde erfolgreich hinzugefügt"
 
-#: restaurants/templates/restaurants/added.html:74
+#: restaurants/templates/restaurants/added.html:75
 msgid ""
 "However, before we will show your restaurant to our users, we need to make "
 "sure that you only offer vegan meals."
@@ -88,7 +84,7 @@ msgstr ""
 "Jedoch bevor wir Ihr Restaurant endgültig unseren Nutzern anzeigen können, "
 "müssen wir sicherstellen, dass Sie nur vegane Gerichte zubereiten."
 
-#: restaurants/templates/restaurants/added.html:75
+#: restaurants/templates/restaurants/added.html:76
 msgid ""
 "Therefore, as a last step, please send photos of your current menu to our "
 "email address menu@wherevegan.de with your registered email address. Please "
@@ -101,7 +97,7 @@ msgstr ""
 "Adresse Ihres Restaurants anzugeben, da wir sonst Ihre Speisekarte nicht "
 "Ihrem Restaurant zuordnen könnten."
 
-#: restaurants/templates/restaurants/added.html:76
+#: restaurants/templates/restaurants/added.html:77
 msgid ""
 "You will receive an email from us as soon as we have checked your restaurant "
 "and menu and approved them for our website."
@@ -110,15 +106,15 @@ msgstr ""
 "Restaurant sowie ihre Speisekarte überprüft und für unsere Website "
 "freigeschalten haben."
 
-#: restaurants/templates/restaurants/added.html:77
+#: restaurants/templates/restaurants/added.html:78
 msgid "back"
 msgstr "zurück"
 
-#: restaurants/templates/restaurants/again.html:14
+#: restaurants/templates/restaurants/again.html:15
 msgid "stop"
 msgstr "abbrechen"
 
-#: restaurants/templates/restaurants/again.html:16
+#: restaurants/templates/restaurants/again.html:17
 msgid "Please enter the same email address as before!"
 msgstr "Geben Sie bitte die gleiche Emailadresse wie zuvor ein!"
 
@@ -126,29 +122,26 @@ msgstr "Geben Sie bitte die gleiche Emailadresse wie zuvor ein!"
 msgid "verify"
 msgstr "überprüfen"
 
-#: restaurants/templates/restaurants/code.html:16
+#: restaurants/templates/restaurants/code.html:17
 msgid "We have sent you a confirmation email."
 msgstr ""
 "Wir haben Ihnen eine Email inklusive eines Bestätigungscodes geschickt!"
 
-#: restaurants/templates/restaurants/code.html:17
+#: restaurants/templates/restaurants/code.html:18
 msgid "Please check your spam folder as well!"
 msgstr "Schauen Sie bitte auch in Ihrem Spamordner nach!"
 
-#: restaurants/templates/restaurants/code.html:34
+#: restaurants/templates/restaurants/code.html:35
 msgid "send again"
 msgstr "nochmal senden"
 
-#: restaurants/templates/restaurants/contact.html:8
-msgid "Contact"
-msgstr "Kontakt"
-
-#: restaurants/templates/restaurants/contact.html:20
-#: restaurants/templates/restaurants/nearby.html:31
+#: restaurants/templates/restaurants/contact.html:9
+#: restaurants/templates/restaurants/contact.html:21
+#: restaurants/templates/restaurants/nearby.html:32
 msgid "contact"
 msgstr "Kontakt"
 
-#: restaurants/templates/restaurants/contact.html:22
+#: restaurants/templates/restaurants/contact.html:23
 msgid ""
 "We are a free online service based in Austria. With our service we do not "
 "seek any financial gain. As we aim for a more vegan oriented future for "
@@ -168,7 +161,7 @@ msgstr ""
 "sind. Wenn Sie Fragen haben, kontaktieren Sie uns bitte und wir werden Ihnen "
 "so schnell wie möglich antworten."
 
-#: restaurants/templates/restaurants/contact.html:25
+#: restaurants/templates/restaurants/contact.html:26
 msgid ""
 "If you notice that certain data (addresses, ...) are no longer up to date or "
 "even incorrect, or restaurants listed on this website also offer non-vegan "
@@ -179,7 +172,7 @@ msgstr ""
 "Restaurants auch nicht-vegane Speisen anbieten, bitten wir Sie, uns dies "
 "umgehend zu melden."
 
-#: restaurants/templates/restaurants/contact.html:29
+#: restaurants/templates/restaurants/contact.html:30
 msgid ""
 "If you want to add your restaurant to our database and furthermore list it "
 "on our website take a look at"
@@ -188,47 +181,47 @@ msgstr ""
 "unsere Datenbank aufzunehmen, sollten Sie bei bei folgendem Link "
 "vorbeischauen."
 
-#: restaurants/templates/restaurants/contact.html:30
+#: restaurants/templates/restaurants/contact.html:31
 msgid "add my restaurant"
 msgstr "mein Restaurant"
 
-#: restaurants/templates/restaurants/nearby.html:8
-msgid "vegan"
-msgstr "Finde vegane"
-
-#: restaurants/templates/restaurants/nearby.html:33
+#: restaurants/templates/restaurants/nearby.html:34
 msgid "languages"
 msgstr "Sprachen"
 
-#: restaurants/templates/restaurants/nearby.html:48
+#: restaurants/templates/restaurants/nearby.html:49
 msgid "Find vegan"
 msgstr "Finde vegane"
 
-#: restaurants/templates/restaurants/nearby.html:48
+#: restaurants/templates/restaurants/nearby.html:49
 msgid "restaurants in"
 msgstr "Restaurants in"
 
-#: restaurants/templates/restaurants/nearby.html:48
+#: restaurants/templates/restaurants/nearby.html:49
 msgid "your area"
 msgstr "deiner Nähe"
 
-#: restaurants/templates/restaurants/nearby.html:55
+#: restaurants/templates/restaurants/nearby.html:56
 msgid "search"
 msgstr "suchen"
 
-#: restaurants/templates/restaurants/nearby.html:89
+#: restaurants/templates/restaurants/nearby.html:90
 msgid "map"
 msgstr "Karte"
 
-#: restaurants/templates/restaurants/privacy.html:45
+#: restaurants/templates/restaurants/privacy.html:8
+msgid "GTC"
+msgstr "AGB"
+
+#: restaurants/templates/restaurants/privacy.html:46
 msgid "General Terms and Conditions (GTC)"
 msgstr "Allgemeine Geschäftsbedingungen (AGB)"
 
-#: restaurants/templates/restaurants/privacy.html:48
+#: restaurants/templates/restaurants/privacy.html:49
 msgid "We do not aim for any financial benefits."
 msgstr "Wir verfolgen keine gewerblichen sowie finanziellen Ziele."
 
-#: restaurants/templates/restaurants/privacy.html:51
+#: restaurants/templates/restaurants/privacy.html:52
 msgid ""
 "By agreeing these terms you agree that we put the address of your restaurant "
 "on our website."
@@ -237,7 +230,7 @@ msgstr ""
 "einverstanden, dass wir die Adresse Ihres Restaurants auf unserer Website "
 "veröffentlichen."
 
-#: restaurants/templates/restaurants/privacy.html:54
+#: restaurants/templates/restaurants/privacy.html:55
 #, fuzzy, python-format
 #| msgid ""
 #| "It will result in an immediate as well as irreversible exclusion from our "
@@ -255,7 +248,7 @@ msgstr ""
 "dies für uns von grundlegender Bedeutung ist. Jedes Gericht, das Sie "
 "anbieten, zubereiten und verkaufen, muss ausnahmslos 100% vegan sein."
 
-#: restaurants/templates/restaurants/privacy.html:57
+#: restaurants/templates/restaurants/privacy.html:58
 msgid ""
 "We maintain the right to delete your restaurant as well as your data from "
 "our database in situations we think it is approriate."
@@ -263,7 +256,7 @@ msgstr ""
 "Wir behalten uns das Recht vor, sowohl Ihr Restaurant als auch Ihre Daten "
 "aus unserer Datenbank zu löschen, wenn wir dies für angemessen halten."
 
-#: restaurants/templates/restaurants/privacy.html:60
+#: restaurants/templates/restaurants/privacy.html:61
 msgid ""
 "As you are providing information and specific details about the particular "
 "business you take responsibility for its truth."
@@ -271,7 +264,7 @@ msgstr ""
 "Da Sie Informationen und spezifische Details über das jeweilige Unternehmen "
 "bereitstellen, übernehmen Sie die Verantwortung für deren Richtigkeit."
 
-#: restaurants/templates/restaurants/privacy.html:63
+#: restaurants/templates/restaurants/privacy.html:64
 msgid ""
 "By agreeing these terms you confirm that the restaurant belongs to you or "
 "you officially act with permission in the name of the particular business. "
@@ -296,7 +289,7 @@ msgstr ""
 "von denen Sie nicht ausdrücklich die Erlaubnis haben, ihre Daten zu teilen, "
 "ist nicht erlaubt und wird Konsequenzen nach sich ziehen."
 
-#: restaurants/templates/restaurants/privacy.html:66
+#: restaurants/templates/restaurants/privacy.html:67
 msgid ""
 "You are able to delete your data and your restaurant from our database "
 "anytime you want. Therefore send us an email with the specific request and "
@@ -306,17 +299,17 @@ msgstr ""
 "unserer Datenbank zu löschen. Schicken Sie uns dazu eine E-Mail mit Ihrer "
 "konkreten Anfrage und wir werden dafür sorgen, dass Ihr Wunsch erfüllt wird."
 
-#: restaurants/views.py:51
+#: restaurants/views.py:49
 msgid "hello"
 msgstr "Hallo"
 
-#: restaurants/views.py:73
+#: restaurants/views.py:71
 msgid ""
 "Unfortunately something went wrong. It looks like you forgot to fill out a "
 "field."
 msgstr "Leider lief etwas schief! Bitte füllen Sie jedes Feld aus!"
 
-#: restaurants/views.py:78
+#: restaurants/views.py:76
 msgid ""
 "Unfortunately something went wrong. You can only register your restaurant by "
 "accepting our general terms and conditions!"
@@ -324,7 +317,7 @@ msgstr ""
 "Leider lief etwas schief! Sie können nur ein Restaurant auf unserer Website "
 "listen, wenn Sie unseren allgemeinen Geschäftsbedingungen zustimmen."
 
-#: restaurants/views.py:85
+#: restaurants/views.py:83
 msgid ""
 "Unfortunately something went wrong! Please check whether you only entered "
 "letters and not numbers for your first and last name"
@@ -332,18 +325,18 @@ msgstr ""
 "Leider lief etwas schief. Bitte geben Sie nur Buchstaben für Ihren Vor- und "
 "Nachnamen ein!"
 
-#: restaurants/views.py:89
+#: restaurants/views.py:87
 msgid "It looks like you entered an invalid email"
 msgstr "Bitte geben Sie eine richtige Emailadresse ein!"
 
-#: restaurants/views.py:93
+#: restaurants/views.py:91
 msgid ""
 "Unfortunately something went wrong! Please check whether you entered a valid "
 "phone number!"
 msgstr ""
 "Leider lief etwas schief. Bitte geben Sie eine richtige Telefonnummer ein!"
 
-#: restaurants/views.py:94
+#: restaurants/views.py:92
 msgid ""
 "Please use the international phone number format e164 following your country "
 "code!"
@@ -351,14 +344,14 @@ msgstr ""
 "Bitte nutzen Sie das internationale e164 Telefonnummernformat (Beginnend mit "
 "einem +)!"
 
-#: restaurants/views.py:126
+#: restaurants/views.py:124
 msgid ""
 "Unfortunately something went wrong! Please check if you entered a correct "
 "address."
 msgstr "Leider lief etwas schief. Bitte geben Sie eine richtige Adresse ein!"
 
-#: restaurants/views.py:138 restaurants/views.py:144 restaurants/views.py:150
-#: restaurants/views.py:155 restaurants/views.py:160
+#: restaurants/views.py:136 restaurants/views.py:142 restaurants/views.py:148
+#: restaurants/views.py:153 restaurants/views.py:158
 msgid ""
 "Unfortunately something went wrong! You can only enter a phone number "
 "located in the same country as your restaurant. If you are located near to a "
@@ -372,7 +365,7 @@ msgstr ""
 "Sie sich an unseren Support (contact@wherevegan.de) zu wenden und wir werden "
 "uns darum kümmern!"
 
-#: restaurants/views.py:175
+#: restaurants/views.py:173
 msgid ""
 "Something went wrong! It looks like there is already a restaurant registered "
 "with the same credentials."
@@ -384,17 +377,17 @@ msgstr ""
 "Mail mit Ihrer registrierten Emailadresse an menu@wherevegan.de, inklusive "
 "Ihres Restaurantnames sowie Adresse, geschickt haben."
 
-#: restaurants/views.py:209
+#: restaurants/views.py:207
 msgid ""
 "Unfortunately something went wrong! It looks like you forgot to enter your "
 "code."
 msgstr "Leider lief etwas schief. Sie haben vergessen Ihren Code einzugeben!"
 
-#: restaurants/views.py:219 restaurants/views.py:326
+#: restaurants/views.py:217 restaurants/views.py:324
 msgid "Unfortunately something went wrong. Please try again!"
 msgstr "Leider lief etwas schief. Bitte versuchen Sie es erneut!"
 
-#: restaurants/views.py:230
+#: restaurants/views.py:228
 msgid ""
 "Unfortunately something went wrong. It looks like this restaurant is already "
 "registered."
@@ -402,15 +395,15 @@ msgstr ""
 "Leider lief etwas schief. Es schaut aus, als wäre dieses Restaurant bereits "
 "registriert."
 
-#: restaurants/views.py:234
+#: restaurants/views.py:232
 msgid "Your code is incorrect."
 msgstr "Der Code ist inkorrekt!"
 
-#: restaurants/views.py:247 restaurants/views.py:265
+#: restaurants/views.py:245 restaurants/views.py:263
 msgid "Unfortunately something went wrong! Please try again"
 msgstr "Leider lief etwas schief. Bitte versuchen Sie es erneut!"
 
-#: restaurants/views.py:269
+#: restaurants/views.py:267
 msgid ""
 "Unfortunately something went wrong! It looks like you entered an invalid "
 "email address! Due to our safety protocols you will need to register your "
@@ -420,7 +413,7 @@ msgstr ""
 "inkorrekt! Aufgrund unserer Sicherheitsprotokolle müssen Sie Ihr Restaurant "
 "erneut registrieren!"
 
-#: restaurants/views.py:273
+#: restaurants/views.py:271
 msgid ""
 "Unfortunately something went wrong! It looks like you entered a different "
 "email address. Due to our safety protocols you will need to register your "
@@ -429,38 +422,38 @@ msgstr ""
 "Leider lief etwas schief. Ihre Emailadressen stimmen nicht überein! Aufgrund "
 "unserer Sicherheitsprotokolle müssen Sie Ihr Restaurant erneut registrieren!"
 
-#: restaurants/views.py:288
+#: restaurants/views.py:286
 msgid "Unfortunately something went wrong! Please try again!"
 msgstr "Leider lief etwas schief. Bitte versuchen Sie es erneut!"
 
-#: restaurants/views.py:304 restaurants/views.py:309 restaurants/views.py:319
+#: restaurants/views.py:302 restaurants/views.py:307 restaurants/views.py:317
 msgid ""
 "Unfortunately something went wrong with your requested range. Please submit "
 "a number greater than 0 and smaller than 150. Thank you!"
 msgstr ""
 "Bitte geben Sie eine Zahl größer als 0 und kleiner als 150 ein! (ohne 'km')"
 
-#: restaurants/views.py:314
+#: restaurants/views.py:312
 msgid "Unfortunately something went wrong with your request. Please try again!"
 msgstr ""
 "Leider lief etwas schief mit Ihrer Anfrage. Bitte versuchen Sie es erneut!"
 
-#: restaurants/views.py:330
+#: restaurants/views.py:328
 msgid "Unfortunately something went wrong with tracking your coordinates"
 msgstr ""
 "Leider lief etwas schief! Wir konnten Ihren Standort nicht herausfinden."
 
-#: restaurants/views.py:344
+#: restaurants/views.py:342
 msgid "Unfortunately there are no vegan restaurants in your requested range."
 msgstr ""
 "Wir konnten leider keine veganen Restaurants in Ihrer angefragten Nähe "
 "finden."
 
-#: restaurants/views.py:353
+#: restaurants/views.py:351
 msgid "Current Location"
 msgstr "Aktuelle Position"
 
-#: restaurants/views.py:476
+#: restaurants/views.py:474
 msgid "Unfortunately we were not able to send you an email. Please try again!"
 msgstr ""
 "Leider lief etwas schief. Wir konnten Ihnen keine Email zukommen lassen!"
@@ -476,6 +469,12 @@ msgstr ""
 #: vegan2/urls.py:22
 msgid "admin/"
 msgstr ""
+
+#~ msgid "Contact"
+#~ msgstr "Kontakt"
+
+#~ msgid "vegan"
+#~ msgstr "Finde vegane"
 
 #~ msgid "recipes"
 #~ msgstr "Rezepte"
