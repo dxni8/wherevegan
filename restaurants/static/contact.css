@@ -228,17 +228,20 @@ body {
     .main{
         display: inline-block;
         background: #344648;
+        height: 950px;
     }
     .main-div {
         display: flex;
         background: linear-gradient(90deg, #344648 30%, #ffffff 0%);
         box-shadow: 3px 3px 6px 2px #293536, -3px -3px 6px 2px #293536;
         height: 85vh;
+        height: 840px;
+        min-height: 800px;
         width: 90vw;
         margin: auto;
         position: relative;
         vertical-align: middle;
-        margin-top: 9vh;
+        margin-top: 10vh;
     }
     .contact-information{
         width: 50%;
@@ -276,14 +279,7 @@ body {
     #link_add{
         font-size: 18px;
     }
-    @media(max-height: 850px){
-        .main{
-            min-height: 895px;
-        }
-        .main-div{
-            min-height: 725px;
-        }
-    }
+    
     @media(max-height: 700px){
         .heading{
             font-size: 46px;
@@ -298,6 +294,12 @@ body {
     }
 }
 @media(min-width: 900px){
+    .main{
+        height: 900px;
+    }
+    .main-div {
+        height: 800px;
+    }
     @media(max-height: 850px){
         .main{
             min-height: 840px;
@@ -307,6 +309,15 @@ body {
         }
     }
 }
+@media(min-width: 1000px){
+    .main{
+        height: 105vh;
+    }
+    .main-div {
+        height: 85vh;
+        vertical-align: middle;
+    }
+}
 @media(min-width: 1150px){
     .heading{
         font-size: 52px;
@@ -314,6 +325,16 @@ body {
     .contact-information{
         top: 50px;
     }
+    @media(max-height: 780px){
+        .main{
+            min-height: 819px;
+        }
+        .main-div{
+            min-height: 663px;
+        }
+    }
+}
+@media(min-width: 1450px){
     .text1{
         font-size: 20px;
     }
@@ -332,16 +353,6 @@ body {
     .email{
         font-size: 20px;
     }
-    @media(max-height: 780px){
-        .main{
-            min-height: 819px;
-        }
-        .main-div{
-            min-height: 663px;
-        }
-    }
-}
-@media(min-width: 1400px){
     .heading{
         font-size: 66px;
     }
