@@ -82,8 +82,11 @@ body {
     background-color: rgb(255, 255, 255);
     border: 0.2px solid rgb(255, 255, 255);
     border-radius: 8px;
-
+    color: black;
     margin-right: 1%
+}
+#data-countryCode{
+    color: black;
 }
 .policy{
     width: 70vw;
@@ -93,9 +96,11 @@ body {
 }
 
 .text{
-    text-align: left;
+    text-align: center;
     color: white;
     margin-left: 40px;
+    font-size: 14px;
+    display: inline-block;
 }
 
 #check{
@@ -108,9 +113,9 @@ body {
 .privacy_link{
     margin: auto;
     color: rgb(255, 255, 255);
-    font-weight: 600;
     position: relative;
     bottom: 10px;
+    font-size: 12px;
 }
 .privacy_link:hover{
     color: rgb(179, 179, 179);
