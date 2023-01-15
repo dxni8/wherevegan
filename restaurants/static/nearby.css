@@ -160,11 +160,11 @@ body {
     width: 100vw;
     height: 100px;
     padding: 20px;
-    padding-top: 25px;
+    padding-top: 20px;
     background-color: #344648;
 }
 .text_no_restaurants{
-    margin-top: 15px;
+    margin-top: 5px;
     text-align: center;
     color: black;
 }
@@ -514,6 +514,9 @@ iframe {
     .div_no_restaurants{
         background-color: #344648;
         margin-top: 15px;
+    }
+    .text_no_restaurants{
+        margin-top: 10px;;
     }
     #content {
         background-color: rgba(52,70,72,1); 
