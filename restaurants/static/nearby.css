@@ -165,6 +165,7 @@ body {
     margin-top: 15px;
     text-align: center;
     color: black;
+    background-color: #344648;
 }
 
 
@@ -507,6 +508,9 @@ iframe {
         margin-top: 55px;
     }
     .button:hover{
+        background-color: #344648;
+    }
+    .text_no_restaurants{
         background-color: #344648;
     }
     #content {
