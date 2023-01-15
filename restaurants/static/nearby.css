@@ -142,6 +142,7 @@ body {
     width: 25vw;
     min-height: 40px;
     margin-top: 10px;
+    margin-bottom: 15px;
     border: 0.5px solid #344648;
     background-color: #ffffff;
 }
@@ -159,8 +160,7 @@ body {
     width: 100vw;
     height: 100px;
     padding: 20px;
-    margin-top: -5px;
-    padding-top: 0px;
+    padding-top: 25px;
     background-color: #344648;
 }
 .text_no_restaurants{
@@ -513,6 +513,7 @@ iframe {
     }
     .div_no_restaurants{
         background-color: #344648;
+        margin-top: 15px;
     }
     #content {
         background-color: rgba(52,70,72,1); 
