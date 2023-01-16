@@ -163,9 +163,14 @@ body {
     background-color: #344648;
 }
 .text_no_restaurants{
-    margin-top: 5px;
     text-align: center;
     color: black;
+    background-color: #344648;
+    display: inline-block;
+    width: 100vw;
+    height: 100px;
+    padding: 20px;
+    padding-top: 55px;
 }
 
 
