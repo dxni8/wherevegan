@@ -155,12 +155,11 @@ body {
     border-radius: 8px;
 }
 .div_no_restaurants{
-    margin-top: 40px;
     display: inline-block;
     width: 100vw;
     height: 100px;
     padding: 20px;
-    padding-top: 15px;
+    padding-top: 55px;
     background-color: #344648;
 }
 .text_no_restaurants{
