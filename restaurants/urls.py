@@ -11,4 +11,5 @@ urlpatterns = [
     path('phone_code', views.phone_code_view, name='phone_code'),
     path('email_again_view', views.email_again_view, name='email_again_view'),
     path('email_again', views.email_again, name='email_again'),
+    path('session_timeout', views.session_timeout, name='session_timeout'),
 ]
