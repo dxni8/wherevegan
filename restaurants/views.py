@@ -462,8 +462,6 @@ def hash_code(phone_code):
     code = code - 36
     return code
 
-def session_timeout(request):
-    return render(request, 'restaurants/session.html')
 
 """
 git add .

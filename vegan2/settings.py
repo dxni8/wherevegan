@@ -56,6 +56,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "vegan2.middleware.CsrfRotateMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
@@ -138,7 +139,7 @@ django_heroku.settings(locals())
 
 #HTTPS settings
 SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True   ##################################
 SECURE_SSL_REDIRECT = True
 
 #HSTS settings
