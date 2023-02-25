@@ -139,7 +139,7 @@ django_heroku.settings(locals())
 
 #HTTPS settings
 SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True   ##################################
+#CSRF_COOKIE_SECURE = True   ##################################
 SECURE_SSL_REDIRECT = True
 
 #HSTS settings
@@ -164,8 +164,3 @@ LANGUAGES = (
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale/'),
 )
-
-#session timeout 
-SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
-SESSION_EXPIRE_AFTER_LAST_ACTIVITY_GRACE_PERIOD = 1
-SESSION_TIMEOUT_REDIRECT = 'https://www.wherevegan.de/session_timeout'
